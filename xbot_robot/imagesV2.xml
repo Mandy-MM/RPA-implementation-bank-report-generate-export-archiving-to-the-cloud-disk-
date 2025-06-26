@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository xmlns:x="rpa://imageselector/core">
+  <group name="默认分组">
+    <imageelement name="图像" sourcetype="screenshot" filepath="resources\images\225320fc-3d9b-4f59-9109-2166ed96c3f8.png" similarity="80" scalingfactor="2" adaptive="True" graying="False" />
+    <imageelement name="login界面窗口" sourcetype="screenshot" filepath="resources\images\d996acbd-0e95-4dcf-99ca-85e8786a79e9.png" similarity="80" scalingfactor="2" adaptive="True" graying="False" />
+    <imageelement name="勾选成功图像_账户界面" sourcetype="screenshot" filepath="resources\images\082dec5a-6787-4235-a11a-d402869a2ed6.png" similarity="80" scalingfactor="1" adaptive="True" graying="False" />
+    <imageelement name="编辑路径" sourcetype="screenshot" filepath="resources\images\3d3a9394-ad58-421f-8431-d227c177eb77.png" similarity="80" scalingfactor="1" adaptive="True" graying="False" />
+    <imageelement name="图像2" sourcetype="screenshot" filepath="resources\images\79dc46f8-8ba0-411d-8368-ac00a4029d52.png" similarity="80" scalingfactor="1" adaptive="True" graying="False" />
+    <imageelement name="新建文件夹网盘" sourcetype="loadfromfile" filepath="resources\images\86177a90-a4d7-4366-a943-ab07f52066f2.png" similarity="80" scalingfactor="0" adaptive="False" graying="False" />
+    <imageelement name="找不到path" sourcetype="loadfromfile" filepath="resources\images\3b42cdc4-12a5-495c-8898-c0245b60702b.png" similarity="50" scalingfactor="0" adaptive="False" graying="False" />
+    <imageelement name="已上传保存" sourcetype="loadfromfile" filepath="resources\images\dbc3a786-25bf-4824-97ff-24a3b799c484.png" similarity="80" scalingfactor="0" adaptive="False" graying="False" />
+    <imageelement name="不小心勾选到" sourcetype="screenshot" filepath="resources\images\e79da746-6801-4271-bd89-0e4c2e29de4a.png" similarity="80" scalingfactor="1" adaptive="True" graying="False" />
+  </group>
+</repository>
