@@ -1,0 +1,52 @@
+{
+  "types": [],
+  "blocks": [
+    {
+      "name": "mb95vf67m",
+      "statement": "process.invoke_dynamic",
+      "title": "变量自增1",
+      "keywords": "",
+      "description": "对输入的变量值  variable_value  进行加1操作，返回自增后的结果",
+      "comment": "对输入的变量值 % variable_value % 进行加1操作，返回自增后的结果",
+      "icon": "BlockIcons/magic.png",
+      "function": "magic_activities.mb95vf67m.increment_variable",
+      "helpUrl": null,
+      "extension": null,
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "variable_value",
+          "label": "需要自增的变量值",
+          "required": false,
+          "tips": "需要自增的变量值",
+          "type": "int",
+          "default": "13:5",
+          "editor": {
+            "kind": "spin",
+            "placeholder": ""
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "incremented_value",
+          "label": "自增后的变量值",
+          "tips": "自增后的变量值",
+          "name": "自增后的变量值",
+          "type": "int"
+        }
+      ],
+      "magic": {
+        "packages": [],
+        "code": "from typing import *\ntry:\n    from xbot.app.logging import trace as print\nexcept:\n    from xbot import print\n\n\ndef increment_variable(variable_value):\n    \"\"\"\n    title: 变量自增1\n    description: 对输入的变量值 % variable_value % 进行加1操作，返回自增后的结果。\n    inputs: \n        - variable_value (int): 需要自增的变量值，eg: \"5\"\n    outputs: \n        - incremented_value (int): 自增后的变量值，eg: \"6\"\n    \"\"\"\n    \n    # 检查输入有效性\n    if not isinstance(variable_value, (int, float)):\n        raise ValueError(\"输入的变量值必须是数字类型\")\n    \n    # 执行自增操作\n    incremented_value = variable_value + 1\n    \n    return incremented_value\n",
+        "version": "2.0.0.0",
+        "selectorCapsule": []
+      }
+    }
+  ]
+}

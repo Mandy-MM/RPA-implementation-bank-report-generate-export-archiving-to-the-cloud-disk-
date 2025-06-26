@@ -1,0 +1,156 @@
+{
+  "name": "如果可编辑",
+  "memo": null,
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "43dee784-a5e0-4410-ac9b-232300f75088",
+      "name": "workflow.infinite_loop",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {},
+      "outputs": {
+        "loop_index": {
+          "name": "loop_index",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "86c54c10-c2f4-4565-98fa-baf28fca1cdd",
+      "name": "image.exist",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "window_kind": {
+          "value": "10:screen",
+          "display": "整个屏幕"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "exist_mode": {
+          "value": "10:exist",
+          "display": "存在"
+        },
+        "template_images": {
+          "value": "14:编辑路径",
+          "display": "编辑路径"
+        },
+        "is_find_all_images": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "55283eef-432f-424b-8bf9-614bdc5c178e",
+      "name": "image.click",
+      "isEnabled": true,
+      "inputs": {
+        "window_kind": {
+          "value": "10:screen",
+          "display": "整个屏幕"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "template_images": {
+          "value": "14:编辑路径",
+          "display": "编辑路径"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:10"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {},
+      "exception_handling": {
+        "logging": true,
+        "mode": "retry",
+        "retryTime": 2,
+        "retryInterval": 1
+      }
+    },
+    {
+      "id": "d76df107-23ca-425b-964a-6e0db4480f22",
+      "name": "win32.window.contains_element",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "content_type": {
+          "value": "10:contains_element",
+          "display": "包含元素"
+        },
+        "element": {
+          "value": "12:路径编辑框",
+          "display": "路径编辑框"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "855cfa08-74d0-4345-bc2e-a21aa4407c9d",
+      "name": "workflow.break",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "0647b872-6b29-459e-8437-f1a8704ffa39",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "6201ae4f-af40-4cf0-ad59-ef5100859a76",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "9739a657-cb0c-4bfb-9f10-2652053cab7c",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    }
+  ],
+  "parameters": []
+}

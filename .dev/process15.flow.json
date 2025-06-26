@@ -1,0 +1,296 @@
+{
+  "name": "网盘登入流程",
+  "memo": null,
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "d5303164-0fa0-44b1-a31c-cd91f4d1a3cb",
+      "name": "programing.sleep",
+      "isEnabled": true,
+      "inputs": {
+        "random_number": {
+          "value": "13:False"
+        },
+        "seconds": {
+          "value": "10:1"
+        },
+        "start_number": {
+          "value": "10:1"
+        },
+        "stop_number": {
+          "value": "10:5"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b9e4a1db-b67e-44be-abf3-7a545c2ddd26",
+      "name": "win32.window.contains_element",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "content_type": {
+          "value": "10:contains_element",
+          "display": "包含元素"
+        },
+        "element": {
+          "value": "12:网盘登录界面",
+          "display": "网盘登录界面"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "e75d2ced-7956-4bed-9d34-8255e6706230",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:企业登录账号输入框",
+          "display": "企业登录账号输入框"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "63925d00-6009-4a9a-854f-e497cbd47bcf",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:企业登录账号输入框",
+          "display": "企业登录账号输入框"
+        },
+        "text": {
+          "value": "10:cwgx@yuyuantm.com.cn"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "71409d1e-732c-430a-ac56-c66469bfe4af",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:网盘密码输入框",
+          "display": "网盘密码输入框"
+        },
+        "text": {
+          "value": "10:Abc123456!"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "9322d9be-158d-4445-80a5-b7f1f29bca9a",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:网盘登 录按钮",
+          "display": "网盘登 录按钮"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "0e433d9d-bf49-40ab-aa24-141ed7e3efff",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    }
+  ],
+  "parameters": []
+}

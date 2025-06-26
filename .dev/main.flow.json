@@ -1,0 +1,4379 @@
+{
+  "name": "main",
+  "memo": "我的自动化应用",
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "cdf965da-7199-49a5-8e56-c6de7669cf99",
+      "name": "process.run",
+      "isEnabled": false,
+      "comment": "执行流程%process%，无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process1",
+          "display": "NC登入流程"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": null
+        },
+        "outputs": {
+          "value": null
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "b9995b8e-ee3a-46c0-a99b-21e69579f25d",
+      "name": "win32.element.click",
+      "isEnabled": false,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:余额调节表_常用功能界面",
+          "display": "余额调节表_常用功能界面"
+        },
+        "clicks": {
+          "value": "10:dbclick",
+          "display": "双击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "af5156ad-e141-4707-99c7-427e601df303",
+      "name": "dir.get_special_dir",
+      "isEnabled": true,
+      "inputs": {
+        "special_dir_name": {
+          "value": "10:DesktopDirectory",
+          "display": "桌面"
+        }
+      },
+      "outputs": {
+        "dir_path": {
+          "name": "桌面路径",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "957584fd-ec7c-4b51-84d6-b62b6612fc37",
+      "name": "excel.launch",
+      "isEnabled": true,
+      "inputs": {
+        "launch_way": {
+          "value": "10:open",
+          "display": "打开已有的Excel"
+        },
+        "driver_way": {
+          "value": "10:auto_check",
+          "display": "自动检测"
+        },
+        "open_filename": {
+          "value": "13:桌面路径+'\\测试.xlsx'"
+        },
+        "save_filename": {
+          "value": "10:"
+        },
+        "isvisible": {
+          "value": "13:True"
+        },
+        "ignoreformula": {
+          "value": "13:False"
+        },
+        "password": {
+          "value": null
+        },
+        "write_password": {
+          "value": null
+        },
+        "update_links": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "excel_instance": {
+          "name": "公司名称和路径",
+          "variableLabel": "打开的Excel对象",
+          "isEnable": true
+        }
+      },
+      "blockNote": "改动：文件需要存到桌面"
+    },
+    {
+      "id": "8018a33c-4419-4571-a93a-dd3175d27686",
+      "name": "excel.launch",
+      "isEnabled": true,
+      "inputs": {
+        "launch_way": {
+          "value": "10:open",
+          "display": "打开已有的Excel"
+        },
+        "driver_way": {
+          "value": "10:auto_check",
+          "display": "自动检测"
+        },
+        "open_filename": {
+          "value": "13:桌面路径+'\\执行情况.xlsx'"
+        },
+        "save_filename": {
+          "value": "10:"
+        },
+        "isvisible": {
+          "value": "13:True"
+        },
+        "ignoreformula": {
+          "value": "13:False"
+        },
+        "password": {
+          "value": null
+        },
+        "write_password": {
+          "value": null
+        },
+        "update_links": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "excel_instance": {
+          "name": "账户执行情况",
+          "variableLabel": "打开的Excel对象",
+          "isEnable": true
+        }
+      },
+      "blockNote": "改动：文件需要存到桌面"
+    },
+    {
+      "id": "65cec766-224b-485b-9cb3-4c45a7afd30b",
+      "name": "list.create",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {
+        "list_instance": {
+          "name": "公司名称列表",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "fecbd152-9d3e-4752-be65-0d8da591ef80",
+      "name": "programing.variable",
+      "isEnabled": true,
+      "comment": "设置整数变量%variable%=%value%",
+      "inputs": {
+        "value_type": {
+          "value": "10:int"
+        },
+        "value": {
+          "value": "13:2"
+        }
+      },
+      "outputs": {
+        "variable": {
+          "name": "执行情况excel行索引",
+          "variableLabel": "整数",
+          "type": "int",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "641f494c-8515-4ca2-9ddf-dd17fb354cce",
+      "name": "excel.loop_data_from_workbook",
+      "isEnabled": true,
+      "comment": "循环Excel对象%workbook%起始单元格（第%range_begin_row_num%行，第%range_begin_column_name%列）与结束单元格（第%range_end_row_num%行，第%range_end_column_name%列）之间的内容，将每次循环项保存到%loop_item%，行号保存到%loop_item_rownum%",
+      "foldState": "UnFold",
+      "inputs": {
+        "workbook": {
+          "value": "11:公司名称和路径",
+          "display": "公司名称和路径"
+        },
+        "loop_way": {
+          "value": "10:loop_range",
+          "display": "循环区域"
+        },
+        "range": {
+          "value": null
+        },
+        "begin_row_num": {
+          "value": null
+        },
+        "end_row_num": {
+          "value": null
+        },
+        "begin_column_name": {
+          "value": null
+        },
+        "end_column_name": {
+          "value": null
+        },
+        "has_header_row": {
+          "value": "13:False"
+        },
+        "range_begin_row_num": {
+          "value": "10:2"
+        },
+        "range_begin_column_name": {
+          "value": "10:E"
+        },
+        "range_end_row_num": {
+          "value": "10:-1"
+        },
+        "range_end_column_name": {
+          "value": "10:E"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "using_text": {
+          "value": "13:False"
+        },
+        "text_cols": {
+          "value": "10:"
+        },
+        "clear_space": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "loop_item": {
+          "name": "当前循环公司",
+          "variableLabel": "当前循环行的数据",
+          "type": "table.row<any>",
+          "isEnable": true
+        },
+        "loop_item_rownum": {
+          "name": "当前循环公司excel行号",
+          "isEnable": true
+        },
+        "loop_item_columnname": {
+          "name": "loop_item_columnname",
+          "isEnable": false
+        }
+      },
+      "blockNote": "遍历查询excel里的每个公司"
+    },
+    {
+      "id": "c33fbb6d-7ecd-4763-b486-c962189c9b8b",
+      "name": "excel.read_data_from_workbook",
+      "isEnabled": true,
+      "comment": "从Excel对象%workbook%中读取单元格（第%cell_row_num%行，第%cell_column_name%列）中的内容，将数据保存到%excel_data%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "read_way": {
+          "value": "10:cell",
+          "display": "单元格内容"
+        },
+        "range": {
+          "value": null
+        },
+        "cell_row_num": {
+          "value": "11:当前循环公司excel行号"
+        },
+        "cell_column_name": {
+          "value": "10:AC"
+        },
+        "area_begin_row_num": {
+          "value": null
+        },
+        "area_begin_column_name": {
+          "value": null
+        },
+        "area_end_row_num": {
+          "value": null
+        },
+        "area_end_column_name": {
+          "value": null
+        },
+        "row_row_num": {
+          "value": null
+        },
+        "get_display_text": {
+          "value": "13:False"
+        },
+        "has_header_row": {
+          "value": "13:False"
+        },
+        "column_column_name": {
+          "value": null
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "using_text": {
+          "value": "13:False"
+        },
+        "text_cols": {
+          "value": "10:"
+        },
+        "clear_space": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "excel_data": {
+          "name": "当前循环路径",
+          "variableLabel": "Excel单元格内容",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "40641ec9-261a-4d7b-b023-27910e4a571b",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:查询按钮_余额表界面",
+          "display": "查询按钮_余额表界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "e4a3d200-38f4-459e-9930-e3ae1d462aeb",
+      "name": "text.extract_content_from_text",
+      "isEnabled": true,
+      "inputs": {
+        "text": {
+          "value": "13:str(当前循环公司)"
+        },
+        "extract_way": {
+          "value": "10:custom",
+          "display": "提取自定义内容"
+        },
+        "regular_pattern": {
+          "value": "13:\"^\\\\['(.*)\\'\\\\]$\""
+        },
+        "just_get_first": {
+          "value": "13:True"
+        },
+        "ignore_case": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "content": {
+          "name": "公司名称",
+          "variableLabel": "提取到的文本",
+          "type": "str",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "c9376695-790c-4938-a591-4bf9f21dd93e",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:公司查找框_查询界面",
+          "display": "公司查找框_查询界面"
+        },
+        "text": {
+          "value": "13:公司名称"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5095dfad-870e-4eb2-8708-47d48aff2b9c",
+      "name": "win32.element.wait",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:选择公司_查询界面",
+          "display": "选择公司_查询界面"
+        },
+        "state": {
+          "value": "10:appear",
+          "display": "等待元素出现"
+        },
+        "iswait": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:10"
+        }
+      },
+      "outputs": {
+        "wait_result": {
+          "name": "win_wait_result",
+          "variableLabel": "等待元素出现结果",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "4052d11a-d34f-40ab-8f5a-68a4d7250bdb",
+      "name": "win32.window.contains_element",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "content_type": {
+          "value": "10:not_contains_element",
+          "display": "不包含元素"
+        },
+        "element": {
+          "value": "12:选择公司_查询界面",
+          "display": "选择公司_查询界面"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "3e939302-4212-4f4c-85d7-b58f2c152a39",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:A"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:公司名称"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b155a024-4867-42c4-ba70-1054546be69d",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:C"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:\"未下载：原因：未找到公司\""
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "be1e7c40-4596-4af8-b06f-2baa86a4aae2",
+      "name": "mb95vf67m",
+      "isEnabled": true,
+      "inputs": {
+        "variable_value": {
+          "value": "13:执行情况excel行索引"
+        }
+      },
+      "outputs": {
+        "incremented_value": {
+          "name": "执行情况excel行索引",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "cd871bba-09d8-4f8d-9da1-40e5c4a40eff",
+      "name": "workflow.continue",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "bf341e37-b6e5-41a1-a7b5-8c843805e2b3",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "cb421263-5374-422a-be93-2f420ae6803e",
+      "name": "list.append_or_insert",
+      "isEnabled": true,
+      "comment": "在列表对象%lst%的末尾追加%elem%",
+      "inputs": {
+        "lst": {
+          "value": "11:公司名称列表"
+        },
+        "insert_way": {
+          "value": "10:append",
+          "display": "末尾追加"
+        },
+        "index": {
+          "value": "10:0"
+        },
+        "elem": {
+          "value": "11:公司名称"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "13f9ea04-e105-4542-8cab-ce3c06ea29d7",
+      "name": "win32.send_keys",
+      "isEnabled": true,
+      "inputs": {
+        "keys": {
+          "value": "10:{ENTER}"
+        },
+        "hardware_driver_input": {
+          "value": "13:False"
+        },
+        "force_ime_eng": {
+          "value": "13:False"
+        },
+        "contains_hotkey": {
+          "value": "13:True"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "65168574-1471-4dbe-bac6-e5daab7487bc",
+      "name": "process.run",
+      "isEnabled": false,
+      "comment": "执行流程%process%，无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process3",
+          "display": "账户循环流程"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": null
+        },
+        "outputs": {
+          "value": null
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result2",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "e525b010-d95a-4516-9746-b4ec523201fa",
+      "name": "process.run",
+      "isEnabled": false,
+      "comment": "执行流程%process%并传入参数%inputs:WyJ3aW5fd2FpdF9yZXN1bHTlgLzkuLold2luX3dhaXRfcmVzdWx0Je+8jCIsIuW9k+WJjeWFrOWPuOeahOi0puaIt+mAieaLqeaMiemSruebuOS8vOWFg+e0oOWIl+ihqOWAvOS4uiXlvZPliY3lhazlj7jnmoTotKbmiLfpgInmi6nmjInpkq7nm7jkvLzlhYPntKDliJfooagl77yMIiwi5LiK5Liq5pyI5pel5pyf5bm05pyI5YC85Li6JeS4iuS4quaciOaXpeacn+W5tOaciCXvvIwiLCLlvZPmnIjml6XmnJ/lubTmnIjml6XlgLzkuLol5b2T5pyI5pel5pyf5bm05pyI5pelJe+8jCJd%无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process8",
+          "display": "账户循环"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": "16:[{\"win_wait_result\":\"11:win_wait_result\"},{\"当前公司的账户选择按钮相似元素列表\":\"11:当前公司的账户选择按钮相似元素列表\"},{\"上个月日期年月\":\"11:上个月日期年月\"},{\"当月日期年月日\":\"11:当月日期年月日\"}]"
+        },
+        "outputs": {
+          "value": null
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result3",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "6c32e998-d55b-4ca3-81aa-a0929a47afd2",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:账户查询按钮_查询界面",
+          "display": "账户查询按钮_查询界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "01a4b66e-60a9-4c9f-8594-c262696123ee",
+      "name": "win32.element.get_all_elements",
+      "isEnabled": true,
+      "comment": "在窗口%window%中获取一组与元素%selector%相似的元素对象，将结果保存到%element_list%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "selector": {
+          "value": "12:账户选择按钮列表_账户界面",
+          "display": "账户选择按钮列表_账户界面"
+        },
+        "operation": {
+          "value": "10:element",
+          "display": "获取元素对象"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "output_with_element_count": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "element_list": {
+          "name": "当前公司的账户选择按钮相似元素列表",
+          "variableLabel": "相似元素对象列表",
+          "type": "list<xbot.win32.element.Win32Element>",
+          "isEnable": true
+        },
+        "element_count": {
+          "name": "win_element_count",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "ee01e552-b115-451c-acc1-6a00f7c62c7c",
+      "name": "datetime.now",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {
+        "datetime_instance": {
+          "name": "current_datetime",
+          "isEnable": true
+        }
+      },
+      "blockNote": "日期变量设置"
+    },
+    {
+      "id": "32240247-ab12-44fb-bf05-f0c91b1d4624",
+      "name": "datetime.to_string",
+      "isEnabled": true,
+      "inputs": {
+        "datetime": {
+          "value": "11:current_datetime"
+        },
+        "format": {
+          "value": "10:%Y-%m"
+        }
+      },
+      "outputs": {
+        "text": {
+          "name": "当月日期年月",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "8529729e-c121-4fd4-bfa7-7ee22fdbe0a1",
+      "name": "xbot_extensions.shadowbot_datatime.常用日期",
+      "isEnabled": true,
+      "inputs": {
+        "humanized_string": {
+          "value": "10:上月最后一天",
+          "display": "上月最后一天"
+        },
+        "formatting_string": {
+          "value": "10:YYYY-MM-DD",
+          "display": "YYYY-MM-DD"
+        },
+        "without_zeros": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "formatted_string": {
+          "name": "上月最后一天日期",
+          "isEnable": true
+        }
+      },
+      "block_title": "日期时间扩展/常用日期"
+    },
+    {
+      "id": "5dd5a35c-ebab-497d-aa25-175b89f1e347",
+      "name": "datetime.add",
+      "isEnabled": true,
+      "comment": "将%datetime%%timeway%%duration%%unit%，并将结果保存到%datetime_text%",
+      "inputs": {
+        "datetime": {
+          "value": "11:current_datetime"
+        },
+        "timeway": {
+          "value": "10:decrease",
+          "display": "减少"
+        },
+        "duration": {
+          "value": "10:1"
+        },
+        "unit": {
+          "value": "10:month",
+          "display": "月"
+        },
+        "output_text": {
+          "value": "13:True"
+        }
+      },
+      "outputs": {
+        "datetime_instance": {
+          "name": "datetime_instance",
+          "isEnable": false
+        },
+        "datetime_text": {
+          "name": "具体日期",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "ea6ec0d0-c13f-44e1-8712-b590a05f699f",
+      "name": "datetime.to_string",
+      "isEnabled": true,
+      "inputs": {
+        "datetime": {
+          "value": "11:具体日期"
+        },
+        "format": {
+          "value": "10:%Y-%m"
+        }
+      },
+      "outputs": {
+        "text": {
+          "name": "上个月日期年月",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "df123049-4902-42ab-9e73-d409930cccaf",
+      "name": "win32.element.get_all_elements",
+      "isEnabled": true,
+      "comment": "在窗口%window%中获取一组与元素%selector%相似的元素文本内容，将结果保存到%element_list%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "selector": {
+          "value": "12:币种列表_相似元素组",
+          "display": "币种列表_相似元素组"
+        },
+        "operation": {
+          "value": "10:text",
+          "display": "获取元素文本内容"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "output_with_element_count": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "element_list": {
+          "name": "币种",
+          "variableLabel": "相似元素文本内容列表",
+          "type": "list<str>",
+          "isEnable": true
+        },
+        "element_count": {
+          "name": "win_element_count3",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "13b0b7da-5c3d-4eb7-b81e-765a4e7ee2d6",
+      "name": "win32.element.get_all_elements",
+      "isEnabled": true,
+      "comment": "在窗口%window%中获取一组与元素%selector%相似的元素文本内容，将结果保存到%element_list%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "selector": {
+          "value": "12:账户名称列表_相似元素组",
+          "display": "账户名称列表_相似元素组"
+        },
+        "operation": {
+          "value": "10:text",
+          "display": "获取元素文本内容"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "output_with_element_count": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "element_list": {
+          "name": "账户名称列表文本",
+          "variableLabel": "相似元素文本内容列表",
+          "type": "list<str>",
+          "isEnable": true
+        },
+        "element_count": {
+          "name": "win_element_count",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "74140b39-3d44-41d4-8791-84f891049451",
+      "name": "workflow.forin",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "list": {
+          "value": "11:账户名称列表文本"
+        },
+        "loop_start_index": {
+          "value": "10:0"
+        },
+        "loop_end_index": {
+          "value": "10:-1"
+        },
+        "output_with_index": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "loop_item": {
+          "name": "当前循环要选择的账户名称文本",
+          "type": "str",
+          "isEnable": true
+        },
+        "loop_index": {
+          "name": "loop_item_index",
+          "isEnable": false
+        }
+      },
+      "blockNote": "循环该公司的账户"
+    },
+    {
+      "id": "2a9f499e-3b34-4e28-8022-8613a36662a9",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:账户查询按钮_查询界面",
+          "display": "账户查询按钮_查询界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "0233727f-e17a-4219-87cf-61928b8bfc14",
+      "name": "list.get_index",
+      "isEnabled": true,
+      "inputs": {
+        "lst": {
+          "value": "11:账户名称列表文本"
+        },
+        "elem": {
+          "value": "11:当前循环要选择的账户名称文本"
+        }
+      },
+      "outputs": {
+        "element_index": {
+          "name": "账户名称索引_index",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "3ca3bebf-b794-4e56-85de-21df196fe10e",
+      "name": "programing.variable",
+      "isEnabled": true,
+      "comment": "设置字符串变量%variable%=%value%",
+      "inputs": {
+        "value_type": {
+          "value": "10:str"
+        },
+        "value": {
+          "value": "13:币种[账户名称索引_index]"
+        }
+      },
+      "outputs": {
+        "variable": {
+          "name": "当前币种名称",
+          "variableLabel": "字符串",
+          "type": "str",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "595011dd-78fc-404f-a524-f0d5775a5ab4",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:全部选择/清除按钮_账户界面",
+          "display": "全部选择/清除按钮_账户界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "fa2d26e0-225a-497b-8671-dafecb9cefc5",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:全部选择/清除按钮_账户界面",
+          "display": "全部选择/清除按钮_账户界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "eb4eef35-590d-4b57-9beb-fcc9765af8e7",
+      "name": "workflow.for",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "start": {
+          "value": "10:0"
+        },
+        "stop": {
+          "value": "13:len(账户名称列表文本)"
+        },
+        "step": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {
+        "loop_index": {
+          "name": "loop_index",
+          "isEnable": true
+        }
+      },
+      "blockNote": "确认没有已经勾选的账户"
+    },
+    {
+      "id": "aed76f52-ac47-4430-8519-1d7cc08a516c",
+      "name": "image.exist",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "window_kind": {
+          "value": "10:currentactivatewindow",
+          "display": "当前激活窗口"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "exist_mode": {
+          "value": "10:exist",
+          "display": "存在"
+        },
+        "template_images": {
+          "value": "14:勾选成功图像_账户界面",
+          "display": "勾选成功图像_账户界面"
+        },
+        "is_find_all_images": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "8aa69145-59f4-4ded-8ebe-195b75e2e7ad",
+      "name": "image.click",
+      "isEnabled": true,
+      "inputs": {
+        "window_kind": {
+          "value": "10:currentactivatewindow",
+          "display": "当前激活窗口"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "template_images": {
+          "value": "14:勾选成功图像_账户界面",
+          "display": "勾选成功图像_账户界面"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:5"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "a7dd28eb-d0f0-453a-9f86-adbb709ddbc5",
+      "name": "workflow.else",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "e68fb708-2a04-4bae-9b1a-09bf002da156",
+      "name": "workflow.break",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "0ede7f20-c6d1-4630-a0f1-06beaa3b0590",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "0b538f9f-4258-466c-b304-0b711f12b268",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "2b66680c-8d8f-4213-af05-fe925c1b8742",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:账户搜索框",
+          "display": "账户搜索框"
+        },
+        "text": {
+          "value": "11:当前循环要选择的账户名称文本"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "fa6b9fd1-562f-4286-990c-b898051a6dbf",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:勾选按钮",
+          "display": "勾选按钮"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "321c1a21-6c32-45f1-877d-177be10efa76",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "comment": "在窗口%window%中，模拟人工%button%%clicks%元素%element%，点击%anchor_type%位置（左中部）",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:确定账户按钮",
+          "display": "确定账户按钮"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:custom",
+          "display": "自定义"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleLeft"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "d02b9559-6bbc-4f15-8a33-535872575973",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:截止日期输入框_查询界面",
+          "display": "截止日期输入框_查询界面"
+        },
+        "text": {
+          "value": "11:上月最后一天日期"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "dd95f5df-2120-4116-9635-f84aaf862092",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:确定按钮_查询界面",
+          "display": "确定按钮_查询界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "acea39d8-80b7-4c21-947b-ceaaeca39534",
+      "name": "programing.sleep",
+      "isEnabled": true,
+      "inputs": {
+        "random_number": {
+          "value": "13:False"
+        },
+        "seconds": {
+          "value": "10:3"
+        },
+        "start_number": {
+          "value": "10:1"
+        },
+        "stop_number": {
+          "value": "10:5"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5d5921f4-e6d4-4472-a6b6-d7836d8ceda9",
+      "name": "win32.element.get_all_elements",
+      "isEnabled": true,
+      "comment": "在窗口%window%中获取一组与元素%selector%相似的元素文本内容，将结果保存到%element_list%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "selector": {
+          "value": "12:截止日期_余额表_相似元素组",
+          "display": "截止日期_余额表_相似元素组"
+        },
+        "operation": {
+          "value": "10:text",
+          "display": "获取元素文本内容"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "output_with_element_count": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "element_list": {
+          "name": "截止日期相似元素列表_文本",
+          "variableLabel": "相似元素文本内容列表",
+          "type": "list<str>",
+          "isEnable": true
+        },
+        "element_count": {
+          "name": "win_element_count2",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "861432a2-b656-4c14-bfc4-be9a31a4a538",
+      "name": "win32.element.get_all_elements",
+      "isEnabled": true,
+      "comment": "在窗口%window%中获取一组与元素%selector%相似的元素文本内容，将结果保存到%element_list%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "selector": {
+          "value": "12:审批人_相似元素组",
+          "display": "审批人_相似元素组"
+        },
+        "operation": {
+          "value": "10:text",
+          "display": "获取元素文本内容"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "output_with_element_count": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "element_list": {
+          "name": "审批人列表",
+          "variableLabel": "相似元素文本内容列表",
+          "type": "list<str>",
+          "isEnable": true
+        },
+        "element_count": {
+          "name": "win_element_count",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "503ce429-f89c-4331-8b99-47c707655231",
+      "name": "win32.element.foreach_element",
+      "isEnabled": true,
+      "comment": "从窗口%window%中获取相似元素%selector%的对象，将结果依次循环保存到%loop_item%",
+      "foldState": "UnFold",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "selector": {
+          "value": "12:截止日期_余额表_相似元素组",
+          "display": "截止日期_余额表_相似元素组"
+        },
+        "operation": {
+          "value": "10:element",
+          "display": "获取元素对象"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "loop_start_index": {
+          "value": "10:0"
+        },
+        "loop_end_index": {
+          "value": "10:-1"
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "output_with_index": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "loop_item": {
+          "name": "数据界面截止日期_当前循环行日期",
+          "variableLabel": "当前循环项的对象",
+          "type": "xbot.win32.element.Win32Element",
+          "isEnable": true
+        },
+        "loop_index": {
+          "name": "win_loop_element_index",
+          "isEnable": false
+        }
+      },
+      "blockNote": "检索查询后的截止日期列表选择上月日期"
+    },
+    {
+      "id": "b64b9259-1a74-4f5a-adba-7e53e6b01134",
+      "name": "list.get_index",
+      "isEnabled": true,
+      "inputs": {
+        "lst": {
+          "value": "11:截止日期相似元素列表_文本"
+        },
+        "elem": {
+          "value": "13:数据界面截止日期_当前循环行日期.get_text()"
+        }
+      },
+      "outputs": {
+        "element_index": {
+          "name": "截止日期列表_index",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "2095e088-c800-4d8e-bfac-29839ae7d8c0",
+      "name": "workflow.multiple_conditions_if",
+      "isEnabled": true,
+      "comment": "满足全部条件%conditionals:WyIlb3BlcmFuZDElJW9wZXJhdG9yJSVvcGVyYW5kMiXvvJsiLCIlb3BlcmFuZDElJW9wZXJhdG9yJSVvcGVyYW5kMiUiXQ==%，则执行以下操作",
+      "foldState": "UnFold",
+      "inputs": {
+        "relation": {
+          "value": "10:and",
+          "display": "符合以下全部条件"
+        },
+        "conditionals": {
+          "value": "16:[\r\n  {\r\n    \"operand1\": \"13:数据界面截止日期_当前循环行日期.get_text()[:7]\",\r\n    \"operand2\": \"11:上个月日期年月\",\r\n    \"operator\": \"10:==\"\r\n  },\r\n  {\r\n    \"operand1\": \"13:审批人列表[截止日期列表_index]\",\r\n    \"operand2\": \"13:\\\"\\\"\",\r\n    \"operator\": \"10:!=\"\r\n  }\r\n]"
+        }
+      },
+      "outputs": {},
+      "blockNote": "如果满足目标截止日期和已经被审查"
+    },
+    {
+      "id": "5b23c1ee-200a-4e69-93a0-a6dd0c5ec274",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "11:数据界面截止日期_当前循环行日期",
+          "display": "数据界面截止日期_当前循环行日期"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5879be4e-5c1a-4f67-901b-f11a0b2fafce",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:余额调节表按钮_余额表界面",
+          "display": "余额调节表按钮_余额表界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "d5c5a3de-a933-414a-b313-d4bd04abd0be",
+      "name": "win32.window.wait_window",
+      "isEnabled": true,
+      "comment": "等待元素%selector%所在的窗口存在，最多等待%timeout%秒",
+      "inputs": {
+        "window_type": {
+          "value": "10:window_selector"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "selector": {
+          "value": "12:打印界面",
+          "display": "打印界面"
+        },
+        "handle": {
+          "value": "10:"
+        },
+        "title": {
+          "value": "10:"
+        },
+        "handle_checked": {
+          "value": "13:False"
+        },
+        "class_name": {
+          "value": "10:"
+        },
+        "wait_way": {
+          "value": "10:appear",
+          "display": "存在"
+        },
+        "use_timeout": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {
+        "window_wait_result": {
+          "name": "win_wait_result",
+          "variableLabel": "等待窗口存在结果",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "f5e76a76-0f43-44b4-9179-5474fba49efa",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:打印按钮_余额表界面",
+          "display": "打印按钮_余额表界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "ae90d557-d538-47c8-8851-e0460fa8df6a",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:输出按钮_打印预览界面",
+          "display": "输出按钮_打印预览界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {},
+      "blockNote": "进入java打印界面"
+    },
+    {
+      "id": "7874b38a-144c-4860-889f-55dc6ec89b85",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:单选按钮_输出到PDF文件_打印预览界面",
+          "display": "单选按钮_输出到PDF文件_打印预览界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "d8c7072d-e79f-4893-8579-2f819c654efe",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:选择目标文件按钮_输出界面",
+          "display": "选择目标文件按钮_输出界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "f29ef10b-cc0e-4a18-83a7-f8cfff78e3be",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:文件名输入框_保存界面",
+          "display": "文件名输入框_保存界面"
+        },
+        "text": {
+          "value": "13:桌面路径+'\\\\余额调节表\\\\'"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {},
+      "blockNote": "改动：需要在桌面创建好余额调节表文件夹"
+    },
+    {
+      "id": "b2100edf-ff0a-4843-888f-658da8fc4145",
+      "name": "win32.send_keys",
+      "isEnabled": true,
+      "inputs": {
+        "keys": {
+          "value": "10:{ENTER}"
+        },
+        "hardware_driver_input": {
+          "value": "13:False"
+        },
+        "force_ime_eng": {
+          "value": "13:False"
+        },
+        "contains_hotkey": {
+          "value": "13:True"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "6c6c0fef-fe29-4ec9-a1d4-e3c6701eb993",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:账户名称索引_index"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:0"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {},
+      "blockNote": "if账户名称列表是第0个，新建文件夹"
+    },
+    {
+      "id": "22a4d6a8-3b09-4e11-9db8-167a3d9b24ea",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:新建文件夹按钮_打印界面",
+          "display": "新建文件夹按钮_打印界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {},
+      "blockNote": "点击新建文件夹元素"
+    },
+    {
+      "id": "e3eb5354-1ccb-4fea-9a9b-bb5acdbf5ea3",
+      "name": "win32.send_keys",
+      "isEnabled": true,
+      "inputs": {
+        "keys": {
+          "value": "10:{BACKSPACE}"
+        },
+        "hardware_driver_input": {
+          "value": "13:False"
+        },
+        "force_ime_eng": {
+          "value": "13:False"
+        },
+        "contains_hotkey": {
+          "value": "13:True"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "13fdfa97-40a7-44d4-b86a-e3533b4a12a4",
+      "name": "win32.send_keys",
+      "isEnabled": true,
+      "inputs": {
+        "keys": {
+          "value": "13:公司名称+'-'+上个月日期年月"
+        },
+        "hardware_driver_input": {
+          "value": "13:False"
+        },
+        "force_ime_eng": {
+          "value": "13:False"
+        },
+        "contains_hotkey": {
+          "value": "13:True"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "1af32f87-1da1-4119-ac1c-c304ad7d6696",
+      "name": "win32.send_keys",
+      "isEnabled": true,
+      "inputs": {
+        "keys": {
+          "value": "10:{ENTER}"
+        },
+        "hardware_driver_input": {
+          "value": "13:False"
+        },
+        "force_ime_eng": {
+          "value": "13:False"
+        },
+        "contains_hotkey": {
+          "value": "13:True"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "c11dc328-5151-4e57-8cab-e3f529551587",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "ae4fd5d6-c3cf-47e7-a2b3-e88c0d1d6e30",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:文件名输入框_保存界面",
+          "display": "文件名输入框_保存界面"
+        },
+        "text": {
+          "value": "13:公司名称+'-'+上个月日期年月+'\\\\'+公司名称+'-'+当前循环要选择的账户名称文本+'-'+当前币种名称+'-'+数据界面截止日期_当前循环行日期.get_text() + '.pdf'"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {},
+      "blockNote": "pdf命名"
+    },
+    {
+      "id": "0e029e4d-1fa3-4897-9d66-59658a5d368d",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:保存按钮_保存界面",
+          "display": "保存按钮_保存界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "96168e4d-f019-4bb0-acd4-9dd33475d115",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:确定Y按钮_输出界面",
+          "display": "确定Y按钮_输出界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "ee037844-a0a7-4332-835a-d3ec49e12144",
+      "name": "programing.sleep",
+      "isEnabled": true,
+      "inputs": {
+        "random_number": {
+          "value": "13:False"
+        },
+        "seconds": {
+          "value": "10:2"
+        },
+        "start_number": {
+          "value": "10:1"
+        },
+        "stop_number": {
+          "value": "10:5"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "82c59788-1bcb-4dbc-a19b-fbf7b8c33351",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:确定按钮_导出界面",
+          "display": "确定按钮_导出界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "94c4705a-9d4a-4916-af62-1718c608d2df",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:关闭按下按钮_打印界面",
+          "display": "关闭按下按钮_打印界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5452af08-b506-43a1-b5d0-c455bd1bd7f2",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:返回按钮_余额表界面",
+          "display": "返回按钮_余额表界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "9f2d55de-544c-4ca2-884e-56d216456816",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:A"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:公司名称"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "1deea1cb-8858-4209-bcd3-4537135ae574",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:B"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "11:当前循环要选择的账户名称文本"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "8cf754dd-d5b7-44ff-be68-c7537c65db01",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:C"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:\"已下载\""
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "6244c19a-5857-4b56-835c-06cb6107962d",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:D"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:\"√\""
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "7cca3c7b-92f2-4cb5-a8f2-2b46a5e2987f",
+      "name": "mb95vf67m",
+      "isEnabled": true,
+      "inputs": {
+        "variable_value": {
+          "value": "13:执行情况excel行索引"
+        }
+      },
+      "outputs": {
+        "incremented_value": {
+          "name": "执行情况excel行索引",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "a2fe6ada-2ea3-4edf-a0b1-43b6cb8d5684",
+      "name": "workflow.break",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "1237957f-28fb-431b-a96f-7cd0fc719b8a",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "13:审批人列表[截止日期列表_index]"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "13:\"\""
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {},
+      "blockNote": "未审批登记"
+    },
+    {
+      "id": "3c63e962-1d46-48c7-bb71-707dd68ff51e",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:A"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:公司名称"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "db8db37a-4011-482a-bac9-c3e6609b5a42",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:B"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "11:当前循环要选择的账户名称文本"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "6b5f5324-0e95-41d7-9597-b14929c1b488",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:C"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:\"未下载，原因：账户当月未审核\""
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "cbfee411-c5eb-4c81-aee6-2a87538eccea",
+      "name": "mb95vf67m",
+      "isEnabled": true,
+      "inputs": {
+        "variable_value": {
+          "value": "13:执行情况excel行索引"
+        }
+      },
+      "outputs": {
+        "incremented_value": {
+          "name": "执行情况excel行索引",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "e0e90fcf-88fb-4a2a-912b-ba1a42e4cbc0",
+      "name": "workflow.break",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "607af8cb-2208-4bb9-b8d5-634aa33b1772",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:截止日期相似元素列表_文本"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "13:\"\""
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b7027e99-7bea-42aa-9e2c-f29b62fc8529",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:A"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:公司名称"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "6b8fb726-8b91-4cbf-b2f3-ab7f69a48121",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:B"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "11:当前循环要选择的账户名称文本"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "4ef8102c-70eb-441c-bf00-976ec1e08a5c",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:账户执行情况",
+          "display": "账户执行情况"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:执行情况excel行索引"
+        },
+        "column_name": {
+          "value": "10:C"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:\"未下载：原因：账户当月无数据\""
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "ef82f137-e626-42a2-965e-052b2d0c2e55",
+      "name": "mb95vf67m",
+      "isEnabled": true,
+      "inputs": {
+        "variable_value": {
+          "value": "13:执行情况excel行索引"
+        }
+      },
+      "outputs": {
+        "incremented_value": {
+          "name": "执行情况excel行索引",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "483814bd-0630-4395-a854-a37f4a30bc7a",
+      "name": "workflow.break",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "67d36ae0-10dc-4678-a5dd-5561e97a3626",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "7136c981-7765-4bed-be70-b7f64a3d28e9",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "7d94e8ce-fc1e-42b4-9c70-80cfa62c96ba",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:查询按钮_余额表界面",
+          "display": "查询按钮_余额表界面"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "250821a1-394c-41f8-a0e0-cc61a97bc658",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "ea55e8df-b88f-41f9-9b0c-f7ab8d64217c",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "502dfba9-7a3a-4676-bbab-52f8b910921a",
+      "name": "programing.variable",
+      "isEnabled": true,
+      "comment": "设置整数变量%variable%=%value%",
+      "inputs": {
+        "value_type": {
+          "value": "10:int"
+        },
+        "value": {
+          "value": "13:0"
+        }
+      },
+      "outputs": {
+        "variable": {
+          "name": "index索引",
+          "variableLabel": "整数",
+          "type": "int",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "d6771bb7-b8fa-4ec9-b3be-29f38c1d5878",
+      "name": "excel.loop_data_from_workbook",
+      "isEnabled": true,
+      "comment": "循环Excel对象%workbook%起始单元格（第%range_begin_row_num%行，第%range_begin_column_name%列）与结束单元格（第%range_end_row_num%行，第%range_end_column_name%列）之间的内容，将每次循环项保存到%loop_item%，行号保存到%loop_item_rownum%",
+      "foldState": "UnFold",
+      "inputs": {
+        "workbook": {
+          "value": "11:公司名称和路径",
+          "display": "公司名称和路径"
+        },
+        "loop_way": {
+          "value": "10:loop_range",
+          "display": "循环区域"
+        },
+        "range": {
+          "value": null
+        },
+        "begin_row_num": {
+          "value": null
+        },
+        "end_row_num": {
+          "value": null
+        },
+        "begin_column_name": {
+          "value": null
+        },
+        "end_column_name": {
+          "value": null
+        },
+        "has_header_row": {
+          "value": "13:False"
+        },
+        "range_begin_row_num": {
+          "value": "10:2"
+        },
+        "range_begin_column_name": {
+          "value": "10:AC"
+        },
+        "range_end_row_num": {
+          "value": "10:-1"
+        },
+        "range_end_column_name": {
+          "value": "10:AC"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "using_text": {
+          "value": "13:False"
+        },
+        "text_cols": {
+          "value": "10:"
+        },
+        "clear_space": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "loop_item": {
+          "name": "当前循环路径",
+          "variableLabel": "当前循环行的数据",
+          "type": "table.row<any>",
+          "isEnable": true
+        },
+        "loop_item_rownum": {
+          "name": "当前循环公司excel行号",
+          "isEnable": true
+        },
+        "loop_item_columnname": {
+          "name": "loop_item_columnname",
+          "isEnable": false
+        }
+      },
+      "blockNote": "路径的列名根据实际改"
+    },
+    {
+      "id": "b2a0032d-4743-4c3e-8251-b51f2409893e",
+      "name": "system.run_or_open",
+      "isEnabled": true,
+      "inputs": {
+        "application_path": {
+          "value": "10:C:\\Users\\Public.DESKTOP-4UAVD8T\\AppData\\Local\\Filez\\zBox\\zBox_client.exe"
+        },
+        "command_line_arguments": {
+          "value": null
+        },
+        "working_folder": {
+          "value": null
+        },
+        "after_application_launch": {
+          "value": "10:continue",
+          "display": "继续执行下一条指令"
+        },
+        "is_waitexit_not_more_than": {
+          "value": "13:False"
+        },
+        "timeout_for_exit": {
+          "value": "10:10"
+        },
+        "is_waithwnd_not_more_than": {
+          "value": "13:False"
+        },
+        "timeout_for_hwnd": {
+          "value": "10:3"
+        },
+        "start_as_admin": {
+          "value": "13:False"
+        },
+        "window_style": {
+          "value": "10:normal",
+          "display": "普通"
+        }
+      },
+      "outputs": {
+        "process_info": {
+          "name": "process_info",
+          "isEnable": true
+        }
+      },
+      "blockNote": "改动：根据实际软件路径"
+    },
+    {
+      "id": "690dc718-a2e5-4f0c-aed4-52d471b13516",
+      "name": "process.run",
+      "isEnabled": true,
+      "comment": "执行流程%process%，无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process15",
+          "display": "网盘登入流程"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": null
+        },
+        "outputs": {
+          "value": null
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result4",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "33478973-4a8e-46e7-a4da-449865ad703d",
+      "name": "programing.sleep",
+      "isEnabled": true,
+      "inputs": {
+        "random_number": {
+          "value": "13:False"
+        },
+        "seconds": {
+          "value": "10:2"
+        },
+        "start_number": {
+          "value": "10:1"
+        },
+        "stop_number": {
+          "value": "10:5"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "2be987ab-a420-424f-be04-9142f568b8a3",
+      "name": "text.extract_content_from_text",
+      "isEnabled": true,
+      "inputs": {
+        "text": {
+          "value": "13:str(当前循环路径)"
+        },
+        "extract_way": {
+          "value": "10:custom",
+          "display": "提取自定义内容"
+        },
+        "regular_pattern": {
+          "value": "13:\"^\\\\['(.*)\\'\\\\]$\""
+        },
+        "just_get_first": {
+          "value": "13:True"
+        },
+        "ignore_case": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "content": {
+          "name": "路径",
+          "variableLabel": "提取到的文本",
+          "type": "str",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "9001510e-ff15-4cf2-9937-b3b9406f670b",
+      "name": "image.wait",
+      "isEnabled": true,
+      "inputs": {
+        "window_kind": {
+          "value": "10:screen",
+          "display": "整个屏幕"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "wait_mode": {
+          "value": "10:appear",
+          "display": "等待目标图像出现"
+        },
+        "template_images": {
+          "value": "14:编辑路径",
+          "display": "编辑路径"
+        },
+        "is_wait_all_images": {
+          "value": "13:False"
+        },
+        "iswait": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {
+        "wait_result": {
+          "name": "image_wait_result",
+          "variableLabel": "等待图像出现结果",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "f4469037-130c-45e2-8d19-5beee25c53b4",
+      "name": "process.run",
+      "isEnabled": true,
+      "comment": "执行流程%process%，无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process14",
+          "display": "如果可编辑"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": null
+        },
+        "outputs": {
+          "value": null
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "53be3fab-7cbf-497e-a060-09db21c1ca7f",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:路径编辑框",
+          "display": "路径编辑框"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5ccd9926-9fbc-47c6-b00d-7fccc33ea819",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:路径编辑框",
+          "display": "路径编辑框"
+        },
+        "text": {
+          "value": "13:路径"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {},
+      "blockNote": "改"
+    },
+    {
+      "id": "828f383c-393c-4041-b57a-8705e2d28835",
+      "name": "win32.send_keys",
+      "isEnabled": true,
+      "inputs": {
+        "keys": {
+          "value": "10:{ENTER}"
+        },
+        "hardware_driver_input": {
+          "value": "13:False"
+        },
+        "force_ime_eng": {
+          "value": "13:False"
+        },
+        "contains_hotkey": {
+          "value": "13:True"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "10d45abb-cd0f-4542-867e-03c90973242e",
+      "name": "image.exist",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "window_kind": {
+          "value": "10:screen",
+          "display": "整个屏幕"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "exist_mode": {
+          "value": "10:exist",
+          "display": "存在"
+        },
+        "template_images": {
+          "value": "14:找不到path",
+          "display": "找不到path"
+        },
+        "is_find_all_images": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b03deca0-eaf5-43d7-a9e3-f9271b8643e7",
+      "name": "programing.log",
+      "isEnabled": true,
+      "inputs": {
+        "type": {
+          "value": "10:info",
+          "display": "信息"
+        },
+        "text": {
+          "value": "10:错误/找不到公司"
+        }
+      },
+      "outputs": {},
+      "blockNote": "加一个跳出循环"
+    },
+    {
+      "id": "47b27437-6358-432e-b55a-6ea7017796f4",
+      "name": "workflow.break",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "93127673-853e-455b-a984-03379c80bfc4",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "3df91aba-783e-4b1a-a19b-bccbc95e0ca5",
+      "name": "image.exist",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "window_kind": {
+          "value": "10:screen",
+          "display": "整个屏幕"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "exist_mode": {
+          "value": "10:exist",
+          "display": "存在"
+        },
+        "template_images": {
+          "value": "14:不小心勾选到",
+          "display": "不小心勾选到"
+        },
+        "is_find_all_images": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "34cc6373-f534-491e-bda3-fa35316e5990",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:上方",
+          "display": "上方"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "cd38ed4d-7545-45c7-b28a-16c956e37746",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "43d6aa5f-4a97-41ad-862b-abd4667bc058",
+      "name": "list.get_elem",
+      "isEnabled": true,
+      "inputs": {
+        "lst": {
+          "value": "11:公司名称列表"
+        },
+        "index": {
+          "value": "13:index索引"
+        }
+      },
+      "outputs": {
+        "list_instance": {
+          "name": "网盘循环中公司名称文本",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "5ddf3fca-fd18-494f-a059-5c726f72673d",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:文件名(N):",
+          "display": "文件名(N):"
+        },
+        "text": {
+          "value": "13:桌面路径+'\\\\余额调节表\\\\'+网盘循环中公司名称文本+'-'+上个月日期年月"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "daa71c24-bc2d-4417-ace4-1cdfcc7a4501",
+      "name": "win32.send_keys",
+      "isEnabled": true,
+      "inputs": {
+        "keys": {
+          "value": "10:{ENTER}"
+        },
+        "hardware_driver_input": {
+          "value": "13:False"
+        },
+        "force_ime_eng": {
+          "value": "13:False"
+        },
+        "contains_hotkey": {
+          "value": "13:True"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "ea82bff8-e6fb-496a-9cc1-b332749ab7ed",
+      "name": "programing.sleep",
+      "isEnabled": true,
+      "inputs": {
+        "random_number": {
+          "value": "13:False"
+        },
+        "seconds": {
+          "value": "10:1"
+        },
+        "start_number": {
+          "value": "10:1"
+        },
+        "stop_number": {
+          "value": "10:5"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "830f845e-01c3-4771-ae54-a7a713c80476",
+      "name": "win32.window.contains_element",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "content_type": {
+          "value": "10:contains_element",
+          "display": "包含元素"
+        },
+        "element": {
+          "value": "12:窗格",
+          "display": "窗格"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "2068023b-6164-472b-a677-7dfdaad0523a",
+      "name": "image.click",
+      "isEnabled": true,
+      "inputs": {
+        "window_kind": {
+          "value": "10:screen",
+          "display": "整个屏幕"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "template_images": {
+          "value": "14:图像2",
+          "display": "图像2"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:5"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b71612af-4dac-4f7f-ae65-aed9135ccf32",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "30d651d0-c1cc-405e-a2c8-6c7705001dba",
+      "name": "mb95vf67m",
+      "isEnabled": true,
+      "inputs": {
+        "variable_value": {
+          "value": "13:index索引"
+        }
+      },
+      "outputs": {
+        "incremented_value": {
+          "name": "index索引",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "27a101b7-4c36-44b0-8bc0-fb88673d9fda",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    }
+  ],
+  "parameters": []
+}

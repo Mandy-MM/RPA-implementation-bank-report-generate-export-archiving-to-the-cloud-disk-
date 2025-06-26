@@ -1,0 +1,77 @@
+{
+  "uuid": "522d8610-fa80-4614-9aa8-d96ff934734d",
+  "name": "余额调节表下载及网盘归档",
+  "icon": null,
+  "version": "1",
+  "tags": "",
+  "software": null,
+  "software_title": null,
+  "package_version": 7,
+  "feature_list": [
+    2,
+    5,
+    7
+  ],
+  "description": null,
+  "instruction": "",
+  "use_latest_pip": false,
+  "videoName": "",
+  "startup": "main",
+  "robot_type": "app",
+  "activity_code": null,
+  "flows": [
+    {
+      "name": "main",
+      "filename": "main",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "NC登入流程",
+      "filename": "process1",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "如果可编辑",
+      "filename": "process14",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "网盘登入流程",
+      "filename": "process15",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    }
+  ],
+  "flow_groups": [],
+  "variables": [],
+  "external_dependencies": [
+    "openpyxl==3.0.7"
+  ],
+  "internaldependencies": [
+    "shadowbot_datatime==24.12.0"
+  ],
+  "selectordependencies": [],
+  "internalautodependencies": [
+    "shadowbot_datatime"
+  ],
+  "ipaasDependencies": [],
+  "databook_columns": [],
+  "authority": "view",
+  "internalautoupgrade": false,
+  "isbrief": false,
+  "uia_type": "PC",
+  "persist_databook": false,
+  "customItems": {
+    "gifUrl": null,
+    "videoUrl": "",
+    "imageUrl": "",
+    "imageName": ""
+  }
+}

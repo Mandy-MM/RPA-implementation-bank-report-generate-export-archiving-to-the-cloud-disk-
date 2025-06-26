@@ -1,0 +1,32 @@
+{
+  "openedFlows": [
+    "main",
+    "NC登入流程",
+    "如果可编辑",
+    "网盘登入流程"
+  ],
+  "activeBottomPanel": "运行日志",
+  "activeFlow": "main",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "NC登入流程",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "如果可编辑",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "网盘登入流程",
+      "Lines": null,
+      "BlockIds": []
+    }
+  ]
+}

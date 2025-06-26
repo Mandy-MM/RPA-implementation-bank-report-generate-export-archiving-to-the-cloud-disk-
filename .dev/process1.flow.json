@@ -1,0 +1,481 @@
+{
+  "name": "NC登入流程",
+  "memo": null,
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "6de015c9-8b93-4a38-b190-67687f518675",
+      "name": "system.run_or_open",
+      "isEnabled": true,
+      "inputs": {
+        "application_path": {
+          "value": "10:C:\\Users\\Public.DESKTOP-4UAVD8T\\Desktop\\UClient.exe"
+        },
+        "command_line_arguments": {
+          "value": null
+        },
+        "working_folder": {
+          "value": null
+        },
+        "after_application_launch": {
+          "value": "10:continue",
+          "display": "继续执行下一条指令"
+        },
+        "is_waitexit_not_more_than": {
+          "value": "13:False"
+        },
+        "timeout_for_exit": {
+          "value": "10:10"
+        },
+        "is_waithwnd_not_more_than": {
+          "value": "13:False"
+        },
+        "timeout_for_hwnd": {
+          "value": "10:3"
+        },
+        "start_as_admin": {
+          "value": "13:False"
+        },
+        "window_style": {
+          "value": "10:normal",
+          "display": "普通"
+        }
+      },
+      "outputs": {
+        "process_info": {
+          "name": "process_info",
+          "isEnable": true
+        }
+      },
+      "blockNote": "改动：根据实际软件路径"
+    },
+    {
+      "id": "481aecbe-ce45-4a0d-b02c-7e546e223d2f",
+      "name": "image.click",
+      "isEnabled": true,
+      "inputs": {
+        "window_kind": {
+          "value": "10:currentactivatewindow",
+          "display": "当前激活窗口"
+        },
+        "window": {
+          "value": "10:"
+        },
+        "template_images": {
+          "value": "14:图像",
+          "display": "图像"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:5"
+        },
+        "delay_after": {
+          "value": "10:1"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "10ccad04-a0dd-423b-9a01-3e9796c3719f",
+      "name": "win32.element.get_element",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "selector": {
+          "value": "12:用户文本框",
+          "display": "用户文本框"
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "is_related_parent": {
+          "value": "13:False"
+        },
+        "parent": {
+          "value": "10:"
+        }
+      },
+      "outputs": {
+        "element": {
+          "name": "用户文本",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "c0ac0f55-6024-4c42-8b4e-95206c83642a",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:用户文本.get_text()"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "13:\"\""
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "3df1b2f5-0209-418a-a696-45614e313543",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:用户名框",
+          "display": "用户名框"
+        },
+        "text": {
+          "value": "10:jiqiren"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "c392a3be-5736-47d8-9efa-ed040ab8f740",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:密码文本",
+          "display": "密码文本"
+        },
+        "text": {
+          "value": "10:yygf230299999"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "4c9d2c8f-8ac4-41a7-97ee-b289b7c1b967",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:登入按钮",
+          "display": "登入按钮"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "32ef48da-49d7-4146-b697-f9733f737fde",
+      "name": "workflow.else",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "37555fc1-8091-49a6-93d7-b572b2b0ac90",
+      "name": "win32.element.input",
+      "isEnabled": true,
+      "comment": "在窗口%window%的%element%中，模拟人工输入%text%",
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:密码文本",
+          "display": "密码文本"
+        },
+        "text": {
+          "value": "10:yygf230299999"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "save_to_clipboard": {
+          "value": "13:False"
+        },
+        "input_type": {
+          "value": "10:simulate",
+          "display": "模拟人工输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "e2ed71e1-721b-483e-a791-69521d0bdaf4",
+      "name": "win32.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "window": {
+          "value": "10:0",
+          "display": "根据操作目标自动匹配"
+        },
+        "element": {
+          "value": "12:登入按钮",
+          "display": "登入按钮"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "move_mouse": {
+          "value": "13:True"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5dc1a0d1-05a4-4be6-830f-5561735fcf45",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    }
+  ],
+  "parameters": []
+}

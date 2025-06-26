@@ -1,0 +1,2483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository xmlns:x="rpa://selector/core" xmlns:regex="rpa://selector/operator/regex" xmlns:wildcard="rpa://selector/operator/wildcard">
+  <group id="21b160f0-ebbd-4855-a3ae-3c96c0e1c9a4" name="Yonyou UClient" type="Win32" processName="Uclient" icon=".dev\icon\ac8776a4-fbd7-4b32-9d17-9479b16c4a2f.png" criteria="">
+    <selector id="4d96066a-93cc-4577-8a4b-7bc8d9d0d639" name="客户端_Yonyou UClient" type="simple" framework="acc" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\b9ac7fa8-c86d-4abc-9114-e1711f250ee2.jpg">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <acc x:name="Client" acc-name="Yonyou UClient">
+        <optional index="-1" />
+      </acc>
+    </selector>
+    <selector id="0f41c2e7-422f-43d3-8dbc-db74c2e5adef" name="用户名框" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\8f812e26-050c-4f05-bb22-c8d012e8c4c0.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,focused,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="LoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="StandardLoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="text">
+        <optional state="enabled,focusable,visible,showing,editable,single line" accContextClassName="AccessibleJTextField" index="3" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="ef83aedb-e2e3-46e9-b56b-0f303eb8a2fb" name="密码文本" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\c3a250ad-5f2f-4bc2-be68-cd47b5247255.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,focused,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="LoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="StandardLoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="password text">
+        <optional state="enabled,focusable,visible,showing,editable,single line" accContextClassName="AccessibleJPasswordField" index="5" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="dd04b614-3e11-43c0-bb8e-0ab0395dacfc" name="登入按钮" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\ec33ec93-1cb9-4c6a-8c13-de15b7d1b3da.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,focused,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="LoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="StandardLoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" virtName="登录系统">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJButton" index="7" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="e8ca6fa4-1a39-43e2-867a-8e542e3c30c0" name="login界面窗口" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\22fa5f18-c51a-4620-8f96-dddce4e8de83.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,focused,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="LoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="StandardLoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="daa495a9-4b19-4411-8854-7374f35cd899" name="余额调节表_常用功能界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\503304e4-5fc0-4007-a9e0-a7ee029cef55.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="功能导航" virtName="功能导航" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="功能导航" virtName="功能导航" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="AsynComponentWrapperPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="BusiNavigatePanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="常用功能" virtName="常用功能" state="enabled,focusable,visible,showing,focused" className="JTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="常用功能" virtName="常用功能" state="enabled,focusable,visible,showing,focused,selectable,selected" accContextClassName="OverridenAccessiblePage" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="3" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="DesktopIconPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane" index="0">
+        <optional state="enabled,focusable,visible,showing" className="JScrollPane" accContextClassName="AccessibleJScrollPane" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing" className="JViewport" accContextClassName="AccessibleJViewport" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="ContentPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel" index="2">
+        <optional state="enabled,focusable,visible,showing" className="ShortcutDesktopCell" accContextClassName="AccessibleJPanel" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="24dc0b36-2605-4e2c-914f-cee76dc31c11" name="查询按钮_余额表界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\72c8c37b-fb88-449d-9c8d-d3f997159033.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="FuncletMenuBar" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="FuncletMenuBarScrollablePanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="查询">
+        <optional virtName="query" state="enabled,visible,showing" className="ActionButton" accContextClassName="AccessibleJButton" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="25575767-e05b-4f8f-a65b-be6e096185cb" name="公司查找框_查询界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\63d3830b-e347-4b58-9a68-055ce2859d15.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FinanceOrgPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="UIRefPane" state="enabled,focusable,visible,showing,focused" className="UIRefPane" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="text">
+        <optional virtName="UITextField" state="enabled,focusable,visible,showing,focused,opaque,editable,single line" className="UIRefPaneTextField" accContextClassName="AccessibleJTextField" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="11274f8d-2994-4293-97c4-d470fb4d457d" name="账户查询按钮_查询界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\66d765e7-5f9a-42dc-9b51-1c0b1b56a9d5.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel" index="2">
+        <optional virtName="UIRefPane" state="enabled,focusable,visible,showing,focused" className="UIRefPane" accContextClassName="AccessibleJPanel" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button">
+        <optional virtName="file:/C:/Users/Lenovo/AppData/Local/UClient/apps/c1fa0e42-b66c-3d47-a99f-bddea87a7f46/nc_client_home/NCCACHE/CODE/resources/themeroot/blue/themeres/control/input/input_search.png" state="enabled,visible,showing" accContextClassName="AccessibleJButton" index="1" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="e0c6aaef-fab8-488a-8e72-15e5be2e1100" name="账户选择按钮列表_账户界面" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\aba656ea-a09d-42e6-b24b-b546779f7492.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="银行对账账户" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="dlgContentPane" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="RefGridData" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="5" hasTableAncestor="0" />
+      </java>
+      <java x:name="table">
+        <optional headerCol="2" state="enabled,visible,showing,opaque,managesDescendents" className="UITable" accContextClassName="OverridenAccessibleJTable" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="check box" tableCol="1">
+        <optional className="IndexJCheckBox" accContextClassName="OverridenAccessibleJTableCell" hasTableAncestor="1" />
+      </java>
+    </selector>
+    <selector id="2246983f-70b6-41a4-99cd-4239fa20bffb" name="截止日期输入框_查询界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\2517a06d-66e4-4be2-b7cd-373fba1f4bd5.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel" index="4">
+        <optional virtName="UIRefPane" state="enabled,focusable,visible,showing" className="UIRefPane" accContextClassName="AccessibleJPanel" hasTableAncestor="0" />
+      </java>
+      <java x:name="text">
+        <optional virtName="UITextField" state="enabled,focusable,visible,showing,opaque,editable,single line" className="UIRefPaneTextField" accContextClassName="AccessibleJTextField" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="bbde1cfc-f7b7-4a68-9189-024f0f78e728" name="确定按钮_查询界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\620eb879-6d0e-44d9-a844-af1789145f96.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="确定">
+        <optional virtName="确定" state="enabled,focusable,visible,showing" className="UIButton" accContextClassName="AccessibleJButton" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="02cf5eb2-93aa-4296-9937-509ae550ba88" name="数据界面_余额表" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\90ce988a-ff3c-4b19-86e5-fead291422de.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="BalanceView" state="enabled,focusable,visible,showing,opaque" className="BalanceView" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional virtName="UITablePane1" state="enabled,focusable,visible,showing,opaque" className="UITablePane" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="66e5d4f9-ae74-406a-bb6c-3e2c42bcb30f" name="截止日期_余额表_相似元素组" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\5f2051eb-d415-469c-9356-2ca4bc7192ca.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="BalanceView" state="enabled,focusable,visible,showing,opaque" className="BalanceView" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional virtName="UITablePane1" state="enabled,focusable,visible,showing,opaque" className="UITablePane" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="table">
+        <optional headerRow="58" headerCol="13" state="enabled,focusable,visible,showing,focused,opaque,managesDescendents" className="UITable" accContextClassName="OverridenAccessibleJTable" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label" tableCol="5">
+        <optional state="enabled,focusable,visible,opaque,showing,transient" className="UIResource" accContextClassName="OverridenAccessibleJTableCell" hasTableAncestor="1" />
+      </java>
+    </selector>
+    <selector id="794bf82f-6051-4674-8563-ae73d87a5b10" name="余额调节表按钮_余额表界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\fb09d6d7-5bd4-44c5-a6a1-ec0132d2f6fc.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="FuncletMenuBar" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="FuncletMenuBarScrollablePanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="余额调节表">
+        <optional virtName="balsJustBook" state="enabled,visible,showing" className="ActionButton" accContextClassName="AccessibleJButton" index="2" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="fa1269c8-0ff8-468e-bebc-f1b600b60b24" name="打印按钮_余额表界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\f8236779-a160-4fe7-aa15-acce52ebe927.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="FuncletMenuBar" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="FuncletMenuBarScrollablePanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="打印">
+        <optional virtName="打印" state="enabled,visible,showing" className="ActionButton" accContextClassName="AccessibleJButton" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="3495cdf6-59db-4548-b627-261663e0ec17" name="打印界面" type="simple" framework="java" processName="Uclient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\5c6550e7-7a08-474d-af73-e9788270058b.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="Uclient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="BalanceView" state="enabled,focusable,visible,showing,opaque" className="BalanceView" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="UIPanelBalance" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="BalanceAdjustView" state="enabled,focusable,visible,showing,opaque" className="BalanceAdjustView" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="split pane">
+        <optional virtName="SPCenter" state="enabled,focusable,visible,showing,opaque,horizontal" className="UISplitPane" accContextClassName="OverridenAccessibleJSplitPane" index="4" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane" virtName="TabAccountBook" className="UITablePane">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport" index="2">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" hasTableAncestor="0" />
+      </java>
+    </selector>
+  </group>
+  <group id="be46972b-bbba-4409-a4ad-9e7fa4bcb398" name="打印预览" type="Win32" processName="javaw" icon=".dev\icon\af47a981-f987-46d5-96f0-697030c14667.png" criteria="">
+    <selector id="05b916de-95c7-4553-94b3-8951a6758d34" name="输出按钮_打印预览界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\1e79f9df-b9a7-4ac1-995c-860988c556a3.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,focused,opaque" className="PreviewPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="PrintSettingPane" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="输出...">
+        <optional virtName="输出..." state="enabled,focusable,visible,showing,opaque" className="PrintCommonButton" accContextClassName="AccessibleJButton" index="1" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="ac18b1e8-faf9-4932-86e0-0692c26bbf7a" name="单选按钮_输出到PDF文件_打印预览界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\d398ce90-f40b-47bd-a279-8f521b23af39.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="radio button" name="输出到PDF文件">
+        <optional virtName="输出到PDF文件" state="enabled,focusable,visible,showing,focused,opaque,checked" className="UIRadioButton" accContextClassName="OverridenAccessibleJToggleButton" index="1" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="eb7e84a7-8f35-4ee6-bc56-1d9cb6cd8b4e" name="选择目标文件按钮_输出界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\8746d82c-71bb-465a-875c-cde05a430cd1.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel" className="PdfOutputSettingEditor">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="OutputFileChooserPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FileChooserPane" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button">
+        <optional virtName="file:/C:/Users/黄璐赟/AppData/Local/UClient/apps/c1fa0e42-b66c-3d47-a99f-bddea87a7f46/nc_client_home/NCCACHE/CODE/resources/images/toolbar/icon/browse.gif" state="enabled,focusable,visible,showing,focused" className="UIButton" accContextClassName="AccessibleJButton" index="1" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="789edffe-d31e-4066-a69b-b032f537fa78" name="主目录按钮_保存界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\314c37d5-1c86-4829-a703-358696f9ccd4.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="保存">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="file chooser">
+        <optional virtName="保存" state="enabled,focusable,visible,showing" className="UIFileChooser" accContextClassName="AccessibleJFileChooser" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="主目录">
+        <optional virtName="主目录" state="enabled,focusable,visible,showing" className="JButton" accContextClassName="AccessibleJButton" index="2" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="905e1475-67e8-4a0c-af91-e9ef360271d1" name="文件名输入框_保存界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\4979e32d-76f3-4058-bc45-47bcc80bdaca.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="保存">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="file chooser">
+        <optional virtName="保存" state="enabled,focusable,visible,showing" className="UIFileChooser" accContextClassName="AccessibleJFileChooser" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="3" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="text">
+        <optional name="文件名(N):" virtName="文件名(N):" state="enabled,focusable,visible,showing,focused,opaque,editable,single line" accContextClassName="AccessibleJTextField" index="1" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="28d92e1b-14cb-46da-81de-d7b1fe93939c" name="保存按钮_保存界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\23431c9d-6fb3-4c33-9fe9-fb786b0fec76.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="保存">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="file chooser">
+        <optional virtName="保存" state="enabled,focusable,visible,showing" className="UIFileChooser" accContextClassName="AccessibleJFileChooser" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="3" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="3" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="保存">
+        <optional virtName="保存" state="enabled,focusable,visible,showing" className="JButton" accContextClassName="AccessibleJButton" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="eb894a64-3028-4a8e-ae16-995a131ef9ae" name="确定Y按钮_输出界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\401a8c26-091b-4840-b7a5-6d4412739f99.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="ButtonPanel" accContextClassName="AccessibleJPanel" index="3" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="确定(Y)">
+        <optional virtName="确定(Y)" state="enabled,focusable,visible,showing" className="UIButton" accContextClassName="AccessibleJButton" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="2b1bfba3-559d-450e-9fa4-fde15789d641" name="确定按钮_导出界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\e7eccc78-d276-4156-ad49-51012ad55d13.jpg" version="V2">
+      <wnd x:name="Window" title="打印预览">
+        <optional cls="SunAwtFrame" app="javaw" />
+      </wnd>
+      <wnd x:name="Window" title="导出PDF">
+        <optional cls="SunAwtDialog" isJavaPopup="true" />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="3" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="确定">
+        <optional virtName="确定" state="enabled,focusable,visible,showing" className="UIButton" accContextClassName="AccessibleJButton" index="1" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="bd3d468f-f347-45f4-96c5-97a3450f93ba" name="关闭按下按钮_打印界面" type="simple" framework="acc" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\2e8e420a-4eb3-4b57-a527-9bb0e0be8d34.jpg">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <acc x:name="TitleBar" value="打印预览">
+        <optional index="1" />
+      </acc>
+      <acc x:name="PushButton" acc-name="关闭">
+        <optional index="2" />
+      </acc>
+    </selector>
+    <selector id="f734670c-0813-4e6b-a1aa-0bc824ab4905" name="新建文件夹按钮_打印界面" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\8ef7d967-50bc-4927-965b-5fcb520f1782.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="保存">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="file chooser">
+        <optional virtName="保存" state="enabled,focusable,visible,showing" className="UIFileChooser" accContextClassName="AccessibleJFileChooser" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="新建文件夹">
+        <optional virtName="新建文件夹" state="enabled,focusable,visible,showing" className="JButton" accContextClassName="AccessibleJButton" index="4" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="923476ac-fc0f-497f-85de-9f495a62fc3a" name="新文件夹名称文本框" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\68c1bcb4-1471-4db1-8723-cb0f4355302c.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="保存">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="file chooser">
+        <optional virtName="保存" state="enabled,focusable,visible,showing" className="UIFileChooser" accContextClassName="AccessibleJFileChooser" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FilePane" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JScrollPane" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="list">
+        <optional name="文件列表" virtName="文件列表" state="enabled,focusable,visible,showing,opaque,managesDescendents" accContextClassName="AccessibleJList" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label" name="新建文件夹">
+        <optional virtName="新建文件夹" state="enabled,focusable,visible,opaque,selectable,selected,showing,transient" accContextClassName="AccessibleJListChild" index="12" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="b9ac9803-279d-477f-a506-2475fa9c0a9a" name="新建文件夹命名框" type="simple" framework="java" processName="javaw" productName="" winTitle="打印预览" screenshot=".dev\screenshot\3ee6ed16-b7f0-4ad1-b5f2-e21f33739039.jpg" version="V2">
+      <wnd x:name="Window" cls="SunAwtFrame" title="打印预览" app="javaw">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="输出到文件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="保存">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="file chooser">
+        <optional virtName="保存" state="enabled,focusable,visible,showing" className="UIFileChooser" accContextClassName="AccessibleJFileChooser" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FilePane" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JScrollPane" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="list">
+        <optional name="文件列表" virtName="文件列表" state="enabled,focusable,visible,showing,opaque,managesDescendents" accContextClassName="AccessibleJList" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label" name="新建文件夹 (2)">
+        <optional virtName="新建文件夹 (2)" state="enabled,focusable,visible,opaque,selectable,selected,showing,transient" accContextClassName="AccessibleJListChild" index="5" hasTableAncestor="0" />
+      </java>
+    </selector>
+  </group>
+  <group id="4c3f70de-f1d0-4f1d-8cb4-2c24f540e995" name="Yonyou UClient" type="Win32" processName="UClient" icon=".dev\icon\90716432-5ce0-4631-bc3b-08b2106eae8e.png" criteria="">
+    <selector id="7a2d8308-3b06-4aff-873b-c38f77b896b5" name="返回按钮_余额表界面" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\1f810e8f-9075-4872-8983-b85296b52424.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="FuncletMenuBar" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="FuncletMenuBarScrollablePanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="返回">
+        <optional virtName="返回" state="enabled,visible,showing" className="ActionButton" accContextClassName="AccessibleJButton" index="2" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="2bcb56c7-f5ed-4bac-a883-f0e362090b75" name="审批人_相似元素组" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\b553de3d-6923-4e52-8d0d-1fb1a190ae47.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="BalanceView" state="enabled,focusable,visible,showing,opaque" className="BalanceView" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional virtName="UITablePane1" state="enabled,focusable,visible,showing,opaque" className="UITablePane" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="table">
+        <optional headerRow="58" headerCol="13" state="enabled,focusable,visible,showing,focused,opaque,managesDescendents" className="UITable" accContextClassName="OverridenAccessibleJTable" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label" tableCol="11">
+        <optional name="王寅枫" virtName="王寅枫" state="enabled,focusable,visible,opaque,showing,transient" className="UIResource" accContextClassName="OverridenAccessibleJTableCell" hasTableAncestor="1" />
+      </java>
+    </selector>
+    <selector id="8f2a014b-6a76-40a1-acc4-a32ce92f9a82" name="行_相似元素组" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\c24080d9-48f5-4f5d-8ff4-7c6a953982c1.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="Workbench" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="WorkbenchSpace" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab list">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing" className="WorkbenchTabbedPane" accContextClassName="OverridenAccessibleJTabbedPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="page tab">
+        <optional name="余额调节表" virtName="余额调节表" state="enabled,focusable,visible,showing,selectable,selected" accContextClassName="OverridenAccessiblePage" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncNodePanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidgetContainer" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="FuncletWidget" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="BalanceView" state="enabled,focusable,visible,showing,opaque" className="BalanceView" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional virtName="UITablePane1" state="enabled,focusable,visible,showing,opaque" className="UITablePane" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="table">
+        <optional headerRow="58" headerCol="13" state="enabled,focusable,visible,showing,focused,opaque,managesDescendents" className="UITable" accContextClassName="OverridenAccessibleJTable" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label" tableRow="0">
+        <optional className="UIResource" accContextClassName="OverridenAccessibleJTableCell" hasTableAncestor="1" />
+      </java>
+    </selector>
+    <selector id="5c8e06c4-988c-4d5a-a989-b8daefba749a" name="登录界面" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\e349298d-09f1-4afc-b7b5-1a21507a7ff5.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,focused,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="LoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="StandardLoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="b4d40232-2d43-45f5-91c7-de8494a18a5f" name="选择公司_查询界面" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\61a7a2e6-e123-43b1-9f70-996915e1e36c.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="popup menu">
+        <optional virtName="ComboPopup.popup" state="enabled,visible,showing" className="UIRefPopup" accContextClassName="AccessibleJPopupMenu" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional virtName="ComboBox.scrollPane" state="enabled,visible,showing,opaque" className="JScrollPane" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="list">
+        <optional virtName="ComboBox.list" state="enabled,visible,showing,opaque,managesDescendents" accContextClassName="AccessibleJList" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label">
+        <optional name="G000112 上海老城隍庙餐饮（集团）有限公司" virtName="G000112 上海老城隍庙餐饮（集团）有限公司" state="enabled,focusable,visible,opaque,selectable,selected,showing,transient" accContextClassName="AccessibleJListChild" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="140391b8-e87a-4e92-a443-2f8e4e4ae16a" name="确定账户按钮" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\1ca4e818-478b-4937-aced-5c966997b108.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="银行对账账户" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="dlgContentPane" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="pnl_south" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="pnl_btnok" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="push button" name="确定(Y)">
+        <optional virtName="UIButtonOK" state="enabled,focusable,visible,showing" className="UIButton" accContextClassName="AccessibleJButton" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="4d485baf-d481-40ac-85dd-e325aff0724d" name="panel_相似元素组" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\d1fa085d-b031-4b89-86e8-3f86c5c044f6.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel" index="1">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="f3bcfa4f-efa7-42fe-bf93-b98889b6c9ee" name="查询界面" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\5897211a-e66b-4360-a68f-d4f349d84ddf.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel" index="1">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="50f51367-5455-423f-87de-c3a5c179b5fa" name="公司查询选择" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\d87befb9-e96d-4d5a-a3b9-2cc25a4ee4df.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="popup menu">
+        <optional virtName="ComboPopup.popup" state="enabled,visible,showing" className="UIRefPopup" accContextClassName="AccessibleJPopupMenu" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional virtName="ComboBox.scrollPane" state="enabled,visible,showing,opaque" className="JScrollPane" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="list">
+        <optional virtName="ComboBox.list" state="enabled,visible,showing,opaque,managesDescendents" accContextClassName="AccessibleJList" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label">
+        <optional name="G000126 上海豫园旅游商城（集团）股份有限公司" virtName="G000126 上海豫园旅游商城（集团）股份有限公司" state="enabled,focusable,visible,opaque,selectable,selected,showing,transient" accContextClassName="AccessibleJListChild" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="c2b05802-5428-4431-943c-72a5f1f4b348" name="币种列表_相似元素组" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\8d6f7e7c-f80e-41d2-a8ac-fb7fab5f6ffd.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="银行对账账户" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="dlgContentPane" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="RefGridData" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="table">
+        <optional headerRow="102" headerCol="2" state="enabled,focusable,visible,showing,focused,opaque,managesDescendents" className="UITable" accContextClassName="OverridenAccessibleJTable" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label" tableCol="1">
+        <optional className="GridDataTableCellRenderer" accContextClassName="OverridenAccessibleJTableCell" hasTableAncestor="1" />
+      </java>
+    </selector>
+    <selector id="52b5670d-53ec-48d6-89fa-1bec94215c45" name="账户名称列表_相似元素组" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\582a8fb6-a4ae-43dc-afe3-5ede47043eed.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="银行对账账户" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="dlgContentPane" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="RefGridData" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport" index="2">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" hasTableAncestor="0" />
+      </java>
+      <java x:name="table">
+        <optional headerRow="102" headerCol="2" state="enabled,focusable,visible,showing,focused,opaque,managesDescendents" className="UITable" accContextClassName="OverridenAccessibleJTable" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="label" tableCol="0">
+        <optional className="GridDataTableCellRenderer" accContextClassName="OverridenAccessibleJTableCell" hasTableAncestor="1" />
+      </java>
+    </selector>
+    <selector id="42790b16-d48b-4ada-9416-defaec72ef4a" name="用户文本框" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\9f65b072-0b5d-4fc9-9e12-cef8a4ffa69e.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="YonyouUWnd">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtFrame" title="">
+        <optional />
+      </wnd>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="frame">
+        <optional virtName="panel0" state="enabled,focusable,visible,showing,active" className="NCApplet" accContextClassName="AccessibleJApplet" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing,focused,opaque" className="JRootPane" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="null.contentPane" state="enabled,focusable,visible,showing,opaque" className="JPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="LoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="StandardLoginUI" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="text">
+        <optional state="enabled,focusable,visible,showing,editable,single line" accContextClassName="AccessibleJTextField" index="3" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="8d75f846-f5dd-411f-a8b0-dfea7dd4ccab" name="账户搜索框" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\29fcad9f-11f0-4efd-8eec-ed14bc90a2ba.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="银行对账账户" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="dlgContentPane" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="pnl_locate_btn" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="pnl_locate" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="text">
+        <optional state="enabled,focusable,visible,showing,opaque,editable,single line" accContextClassName="AccessibleJTextField" index="0" hasTableAncestor="0" />
+      </java>
+    </selector>
+    <selector id="b1637f30-c20d-4d1d-bb26-f38f8e7896cb" name="勾选按钮" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\41a60932-3c48-4fb5-873f-012f4e919fb4.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="银行对账账户" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="dlgContentPane" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="RefGridData" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="viewport">
+        <optional state="enabled,focusable,visible,showing,opaque" className="JViewport" accContextClassName="AccessibleJViewport" index="5" hasTableAncestor="0" />
+      </java>
+      <java x:name="table">
+        <optional headerRow="102" headerCol="2" state="enabled,visible,showing,opaque,managesDescendents" className="UITable" accContextClassName="OverridenAccessibleJTable" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="check box" tableRow="0" tableCol="1">
+        <optional state="enabled,focusable,visible,opaque,showing,active,transient" className="IndexJCheckBox" accContextClassName="OverridenAccessibleJTableCell" index="1" hasTableAncestor="1" />
+      </java>
+    </selector>
+    <selector id="8748c5a1-1ef5-4e7b-8d6d-0379ccf90933" name="全部选择/清除按钮_账户界面" type="simple" framework="java" processName="UClient" productName="" winTitle="Yonyou UClient" screenshot=".dev\screenshot\2ea1aedc-679e-4d44-8fa0-686977ea1467.jpg" version="V2">
+      <wnd x:name="Window" cls="YonyouUWnd" title="Yonyou UClient" app="UClient">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="查询条件">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="SunAwtDialog" title="银行对账账户" isJavaPopup="true">
+        <optional />
+      </wnd>
+      <java x:name="root pane">
+        <optional state="enabled,focusable,visible,showing" accContextClassName="AccessibleJRootPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="layered pane">
+        <optional virtName="null.layeredPane" state="enabled,focusable,visible,showing" className="JLayeredPane" accContextClassName="OverridenJLayeredPane" index="1" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional virtName="dlgContentPane" state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="panel">
+        <optional state="enabled,focusable,visible,showing,opaque" className="UIPanel" accContextClassName="AccessibleJPanel" index="2" hasTableAncestor="0" />
+      </java>
+      <java x:name="scroll pane">
+        <optional state="enabled,focusable,visible,showing,opaque" className="RefGridData" accContextClassName="AccessibleJScrollPane" index="0" hasTableAncestor="0" />
+      </java>
+      <java x:name="tableheader">
+        <optional state="enabled,visible,showing,opaque" className="GroupableTableHeader" accContextClassName="OverriddenAccessibleJTableHeader" index="4" hasTableAncestor="0" />
+      </java>
+      <java x:name="headercell" className="UICheckBox">
+        <optional state="enabled,focusable,visible,opaque,showing" accContextClassName="OverriddenAccessibleJTableHeaderEntry" index="1" hasTableAncestor="0" />
+      </java>
+    </selector>
+  </group>
+  <group id="ad0a4fc2-1927-48d3-be2c-70eb5701052f" name="企业网盘" type="Win32" processName="zBox_client" icon=".dev\icon\500fd8ed-824b-46e6-a165-0b502adafd1b.png" criteria="">
+    <selector id="81e5a288-3e12-433c-9057-b3cd916c5888" name="上传企业网盘界面" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\77c9c1c3-4b8f-470b-8154-bbba25085e35.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="CefBrowserWindow">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="Pane" cls="Chrome_WidgetWin_0">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="豫园股份集团企业云盘">
+        <optional title="Chrome Legacy Window" index="0" />
+      </wnd>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="box-header">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="headerBeforeSearch">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="1" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="upload_create">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="uploadFileButton">
+        <optional index="2" />
+      </uia>
+    </selector>
+    <selector id="c846ac6d-9296-4434-8abc-9b46990f9432" name="编写路径地址" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\bd9e82f0-e451-4c52-b0e0-1cd4acae7d5d.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="CefBrowserWindow">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="Pane" cls="Chrome_WidgetWin_0">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="豫园股份集团企业云盘">
+        <optional title="Chrome Legacy Window" index="0" />
+      </wnd>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="1" />
+      </uia>
+      <uia x:name="Group" uia-id="crumb-wrapper">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="list-crumb">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" index="3">
+        <optional />
+      </uia>
+    </selector>
+    <selector id="9fb5298e-f531-4360-b15a-83d0f9eb1e9c" name="查找范围(I):" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\f0977382-8363-4fef-8e3b-4fedddbb45f6.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="Sb">
+        <optional />
+      </wnd>
+      <wnd x:name="ComboBox" cls="ComboBox" uia-name="查找范围(I):">
+        <optional title="zBox" index="1" />
+      </wnd>
+    </selector>
+    <selector id="1b221a06-60d3-47f2-acc6-b8b40bba23a3" name="桌面" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\8233d2c0-8592-4f42-bbfb-2f93cc156b54.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="Sb">
+        <optional />
+      </wnd>
+      <wnd x:name="ToolBar" cls="ToolbarWindow32">
+        <optional index="5" />
+      </wnd>
+      <uia x:name="Button" uia-name="桌面">
+        <optional index="1" />
+      </uia>
+    </selector>
+    <selector id="b72c36e5-1857-4996-9637-8492a659a3f3" name="上传win" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\bbbc5774-9d08-4c44-9a54-1bb6f69d11d2.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="Sb">
+        <optional />
+      </wnd>
+      <wnd x:name="Button" cls="Button" uia-name="上传">
+        <optional title="上传" index="12" />
+      </wnd>
+    </selector>
+    <selector id="2602b144-6abc-4894-a8d6-64ff1287e15c" name="列表_文件夹视图" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\419cedd0-a60e-44cc-a38c-7c894bd76ba1.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="Sb">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="SHELLDLL_DefView">
+        <optional index="6" />
+      </wnd>
+      <wnd x:name="List" cls="SysListView32" uia-name="文件夹视图">
+        <optional title="FolderView" index="0" />
+      </wnd>
+    </selector>
+    <selector id="1da00997-250f-4b29-81cf-dc534637a33f" name="文件名(N):" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\9cc3d2b5-97ec-4d5c-a9d3-342ca4452b8e.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="Sb">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="ComboBoxEx32">
+        <optional index="8" />
+      </wnd>
+      <wnd x:name="ComboBox" cls="ComboBox" uia-name="文件名(N):">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Edit" cls="Edit" uia-name="文件名(N):">
+        <optional index="0" />
+      </wnd>
+    </selector>
+    <selector id="e2f8851d-6259-4b84-a80d-497b1bb8e7b3" name="窗格" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\355b0f0a-dcd0-4b38-9f3f-3a962ca1257b.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="CFolderConflictDlg" title="">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="PerryShadowWnd" title="">
+        <optional />
+      </wnd>
+    </selector>
+    <selector id="3488e9ad-690b-4768-938f-836ce695956c" name="新建" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\758609ad-6510-4957-8a17-e1600dd95e8e.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="CefBrowserWindow">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="Pane" cls="Chrome_WidgetWin_0">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="豫园股份集团企业云盘">
+        <optional title="Chrome Legacy Window" index="0" />
+      </wnd>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="box-header">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="headerBeforeSearch">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="1" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="upload_create">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Button" uia-name="新建" uia-id="create-file">
+        <optional index="0" />
+      </uia>
+    </selector>
+    <selector id="f1546400-35a4-4964-bc7b-eae7eb704936" name="网盘窗口" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\d8fa2e18-61a1-4023-a6ca-ac24dab4f009.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="PerryShadowWnd" title="">
+        <optional />
+      </wnd>
+    </selector>
+    <selector id="688fe28e-3fc1-4e00-bbb1-1a76870492d8" name="路径编辑框" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\523c358b-08d6-4c21-8f4c-0821b857fa1f.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="CefBrowserWindow">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="Pane" cls="Chrome_WidgetWin_0">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="豫园股份集团企业云盘">
+        <optional title="Chrome Legacy Window" index="0" />
+      </wnd>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="1" />
+      </uia>
+      <uia x:name="Group" uia-id="crumb-wrapper">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" index="1">
+        <optional />
+      </uia>
+    </selector>
+    <selector id="ec96366a-cbcd-4b2b-aa76-b314ab3d9946" name="上方" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\397f31b8-c780-412a-a2a8-2458a7a3161d.jpg">
+      <wnd x:name="Window" cls="CMainWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="CefBrowserWindow">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="Pane" cls="Chrome_WidgetWin_0">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="豫园股份集团企业云盘">
+        <optional title="Chrome Legacy Window" index="0" />
+      </wnd>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" uia-id="box-header">
+        <optional index="0" />
+      </uia>
+    </selector>
+    <selector id="26977f07-a31a-4b1e-ba86-6b937f790084" name="网盘登录界面" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\855e3451-0618-4c63-a4c6-68fba4eb06be.jpg">
+      <wnd x:name="Window" cls="CLoginWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="PerryShadowWnd" title="">
+        <optional />
+      </wnd>
+    </selector>
+    <selector id="64429545-b0f3-4e24-84bb-7afab3116a58" name="企业登录账号输入框" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\47358189-d4bf-478e-b4c3-494646bcff65.jpg">
+      <wnd x:name="Window" cls="CLoginWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="CefBrowserWindow">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="Pane" cls="Chrome_WidgetWin_0">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="‎">
+        <optional title="Chrome Legacy Window" index="0" />
+      </wnd>
+      <uia x:name="Group" uia-id="app">
+        <optional index="1" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" index="2">
+        <optional />
+      </uia>
+      <uia x:name="Group" index="0">
+        <optional />
+      </uia>
+    </selector>
+    <selector id="e4985b1f-a1d2-492e-884a-5295870c90e6" name="网盘密码输入框" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\f062350e-6f1e-46e7-86fd-43708dd439f2.jpg">
+      <wnd x:name="Window" cls="CLoginWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="CefBrowserWindow">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="Pane" cls="Chrome_WidgetWin_0">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="‎">
+        <optional title="Chrome Legacy Window" index="0" />
+      </wnd>
+      <uia x:name="Group" uia-id="app">
+        <optional index="1" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group" index="2">
+        <optional />
+      </uia>
+      <uia x:name="Group" index="1">
+        <optional />
+      </uia>
+    </selector>
+    <selector id="9cc73090-cb31-48e2-b738-0507bc176038" name="网盘登 录按钮" type="simple" framework="win32" processName="zBox_client" productName="" winTitle="企业网盘" screenshot=".dev\screenshot\de5c6035-382e-4d07-8d3e-fc10b852c8b8.jpg">
+      <wnd x:name="Window" cls="CLoginWndWeb_PUBLIC" title="企业网盘" app="zBox_client">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="CefBrowserWindow">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="Pane" cls="Chrome_WidgetWin_0">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="‎">
+        <optional title="Chrome Legacy Window" index="0" />
+      </wnd>
+      <uia x:name="Group" uia-id="app">
+        <optional index="1" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="2" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="4" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Group">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Button" uia-name="登 录">
+        <optional index="0" />
+      </uia>
+    </selector>
+  </group>
+  <group id="1c66040e-06f9-4fa4-9783-011c3e87dbbd" name="豫园股份集团企业云盘" type="Web" processName="msedge" icon=".dev\icon\69ddf984-2b26-4b29-af69-7c02eb55ebec.png" criteria="https://netdrv.yuyuantm.com.cn">
+    <selector id="d736fd1d-73a6-43dd-ac49-c50702488f58" name="上传_网盘界面" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="豫园股份集团企业云盘" screenshot=".dev\screenshot\1d01ecb8-833f-49b3-baf9-a9a6c84cc5e6.jpg">
+      <web x:name="div">
+        <optional data-v-088c5f5e="" class="main-wrapper" index="3" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional data-v-7748667a="" data-v-088c5f5e="" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-123652e8="" data-v-088c5f5e="" data-v-7748667a="" class="body-right" index="2" index-of-type="1" />
+      </web>
+      <web x:name="header">
+        <optional id="box-header" data-v-123652e8="" class="customized header" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="headerBeforeSearch" class="before-search" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="header-operate" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" class="header-button-group" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" class="header-manager-group" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" id="upload_create" class="button-area" index="1" index-of-type="1" />
+      </web>
+      <web x:name="span">
+        <optional data-v-97eb336c="" class="upload-wrapper" index="2" index-of-type="0" />
+      </web>
+      <web x:name="span">
+        <optional data-v-97eb336c="" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" data-auto="createFileOrFolder" class="el-dropdown" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" aria-haspopup="list" aria-controls="dropdown-menu-8566" role="button" tabindex="0" class="default-btn el-dropdown-selfdefine lv-btn" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="7867ddb1-0f94-4719-8c64-d470de5a9549" name="上传_1" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="豫园股份集团企业云盘" screenshot=".dev\screenshot\cf081223-a365-49bc-91bb-ba0f5526a4f9.jpg">
+      <web x:name="div">
+        <optional data-v-088c5f5e="" class="main-wrapper" index="3" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional data-v-7748667a="" data-v-088c5f5e="" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-123652e8="" data-v-088c5f5e="" data-v-7748667a="" class="body-right" index="2" index-of-type="1" />
+      </web>
+      <web x:name="header">
+        <optional id="box-header" data-v-123652e8="" class="customized header" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="headerBeforeSearch" class="before-search" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="header-operate" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" class="header-button-group" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" class="header-manager-group" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" id="upload_create" class="button-area" index="1" index-of-type="1" />
+      </web>
+      <web x:name="span">
+        <optional data-v-97eb336c="" class="upload-wrapper" index="2" index-of-type="0" />
+      </web>
+      <web x:name="span">
+        <optional data-v-97eb336c="" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" data-auto="createFileOrFolder" class="el-dropdown" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" aria-haspopup="list" aria-controls="dropdown-menu-8566" role="button" tabindex="0" class="default-btn el-dropdown-selfdefine lv-btn" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="f20f00d8-9b41-4f45-a5a1-7c901725a3d5" name="编辑网盘路径" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="豫园股份集团企业云盘" screenshot=".dev\screenshot\4d868760-54b8-4a07-a6d9-db17d8dc4d67.jpg">
+      <web x:name="div">
+        <optional data-v-088c5f5e="" class="main-wrapper" index="3" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional data-v-7748667a="" data-v-088c5f5e="" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-123652e8="" data-v-088c5f5e="" data-v-7748667a="" class="body-right" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional data-v-123652e8="" class="page-body" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="page-right" index="0" index-of-type="0" />
+      </web>
+      <web x:name="section">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="crumb-wrapper" class="crumb-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="list-crumb-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-0e389893="" id="list-crumb" class="crumb list-crumb" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-0e389893="" class="edit-btns" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div" index="1">
+        <optional data-v-0e389893="" aria-describedby="el-tooltip-1163" tabindex="0" class="el-tooltip item-icon-wrapper" index-of-type="1" />
+      </web>
+      <web x:name="svg">
+        <optional data-v-0e389893="" data-auto="click" class="item-icon" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="a8fdd375-9f62-49fb-840e-e690dba671c2" name="输入框_路径" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="豫园股份集团企业云盘" screenshot=".dev\screenshot\3d95a83d-9d19-4f04-977f-c067880ee312.jpg">
+      <web x:name="div">
+        <optional data-v-088c5f5e="" class="main-wrapper" index="3" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional data-v-7748667a="" data-v-088c5f5e="" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-123652e8="" data-v-088c5f5e="" data-v-7748667a="" class="body-right" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional data-v-123652e8="" class="page-body" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="page-right" index="0" index-of-type="0" />
+      </web>
+      <web x:name="section">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="crumb-wrapper" class="crumb-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="editing-wrapper list-crumb-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="edit-crumb" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="edit-input show-back" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-auto="callback" class="el-input el-input--suffix" index="0" index-of-type="0" />
+      </web>
+      <web x:name="input" type="text">
+        <optional autocomplete="off" class="el-input__inner" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="0f38ac3b-583c-4bdc-ab3f-6cd039e58152" name="上传文件夹" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="豫园股份集团企业云盘" screenshot=".dev\screenshot\abb3f8cb-ed39-4d58-882d-daf05d0cdf60.jpg">
+      <web x:name="ul">
+        <optional data-v-97eb336c="" id="dropdown-menu-8566" x-placement="bottom-start" class="el-dropdown-menu el-popper upload" index="15" index-of-type="1" />
+      </web>
+      <web x:name="li">
+        <optional data-v-97eb336c="" tabindex="-1" id="uploadFolderButton" class="el-dropdown-menu__item" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" class="upload-folder-button" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-97eb336c="" class="content-title" innerText="上传文件夹" index="1" index-of-type="0" />
+      </web>
+    </selector>
+  </group>
+  <group id="c99a33e5-6f9c-4586-824f-bfff615ab9ea" name="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" type="Win32" processName="msedge" icon=".dev\icon\fb0972c8-108c-49b3-842d-bde0275594d8.png" criteria="">
+    <selector id="35e3a4af-47c8-4137-aeae-68fe2e70b029" name="此电脑上传" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\e7e7a53b-e396-4aa0-b3bc-20ee1f074618.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="DUIViewWndClassName">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="DirectUIHWND" uia-name="浏览器窗格">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="CtrlNotifySink">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="NamespaceTreeControl" uia-name="控制项宿主">
+        <optional title="命名空间树状控制项" index="0" />
+      </wnd>
+      <wnd x:name="Tree" cls="SysTreeView32" uia-name="导航窗格">
+        <optional title="导航窗格" index="1" />
+      </wnd>
+      <uia x:name="TreeItem" uia-name="桌面">
+        <optional index="0" />
+      </uia>
+      <uia x:name="TreeItem" uia-name="此电脑">
+        <optional index="2" />
+      </uia>
+    </selector>
+    <selector id="c47be557-0bf2-4e75-b5f6-d95cb4c4c964" name="编辑_文件地址" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\d2192158-f084-4131-a2c4-f44410ae20ea.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="WorkerW">
+        <optional index="14" />
+      </wnd>
+      <wnd x:name="Pane" cls="ReBarWindow32">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="Address Band Root">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ProgressBar" cls="msctls_progress32" uia-name="正在加载">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="ComboBoxEx32">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ComboBox" cls="ComboBox" uia-name="地址">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Edit" cls="Edit" uia-name="地址">
+        <optional index="0" />
+      </wnd>
+    </selector>
+    <selector id="d5c2fb43-4d16-4757-a58c-d49887897b6f" name="按钮_前往文件地址" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\790ef284-9972-4bca-aa16-942979874862.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="WorkerW">
+        <optional index="14" />
+      </wnd>
+      <wnd x:name="Pane" cls="ReBarWindow32">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="Address Band Root">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ProgressBar" cls="msctls_progress32" uia-name="正在加载">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="ToolBar" cls="ToolbarWindow32" uia-name="地址区段">
+        <optional title="地址区段" index="1" />
+      </wnd>
+      <uia x:name="Button" uia-name="转到“&quot;C:\Users\黄璐赟\Desktop\余额调节表&quot;”">
+        <optional index="0" />
+      </uia>
+    </selector>
+    <selector id="923233e3-2fa3-425c-8cc0-cd859200497a" name="按钮_上传_文件上传界面" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\6976d5d5-e7e3-4746-8fce-2cacc8bd4e2c.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Button" cls="Button" uia-name="上传">
+        <optional title="上传" index="5" />
+      </wnd>
+    </selector>
+    <selector id="66c2beed-a1f9-423a-9f39-eece7d572a81" name="上传" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\628f828a-36ec-4a28-8824-08d274024bf8.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <uia x:name="Pane" uia-name="豫园股份集团企业云盘 - Microsoft Edge">
+        <optional index="2" />
+      </uia>
+      <uia x:name="Text" uia-name="是否将文件上传到此站点?">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Pane">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Pane">
+        <optional index="0" />
+      </uia>
+      <uia x:name="Pane">
+        <optional index="1" />
+      </uia>
+      <uia x:name="Button" uia-name="上传">
+        <optional index="2" />
+      </uia>
+    </selector>
+    <selector id="57809583-0655-42d3-94da-098aea99d257" name="编辑_地址" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\04f67e90-c6f1-4688-818b-6bbb84fc6f1c.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="WorkerW">
+        <optional index="14" />
+      </wnd>
+      <wnd x:name="Pane" cls="ReBarWindow32">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="Address Band Root">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ProgressBar" cls="msctls_progress32" uia-name="正在加载">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="ComboBoxEx32">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ComboBox" cls="ComboBox" uia-name="地址">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Edit" cls="Edit" uia-name="地址">
+        <optional index="0" />
+      </wnd>
+    </selector>
+    <selector id="d054e29a-8afe-441b-a418-73ed7bee7747" name="编辑_地址_1" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\30af5b7e-3254-4c20-84ef-79501d536d27.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="WorkerW">
+        <optional index="14" />
+      </wnd>
+      <wnd x:name="Pane" cls="ReBarWindow32">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="Address Band Root">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ProgressBar" cls="msctls_progress32" uia-name="正在加载">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="ComboBoxEx32">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ComboBox" cls="ComboBox" uia-name="地址">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Edit" cls="Edit" uia-name="地址">
+        <optional index="0" />
+      </wnd>
+    </selector>
+    <selector id="f078bd6a-7ffb-485f-aeec-634feb718b4c" name="编辑_地址_2" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 和另外 2 个页面 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\fdd0c3d5-9d25-44ed-8d25-586829d2792b.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 和另外 2 个页面 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="WorkerW">
+        <optional index="14" />
+      </wnd>
+      <wnd x:name="Pane" cls="ReBarWindow32">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="Address Band Root">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ProgressBar" cls="msctls_progress32" uia-name="正在加载">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="Breadcrumb Parent">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="ToolBar" cls="ToolbarWindow32" uia-name="地址: C:\Users\黄璐赟\Desktop\余额调节表">
+        <optional title="地址: C:\Users\黄璐赟\Desktop\余额调节表" index="0" />
+      </wnd>
+    </selector>
+    <selector id="c82b5b4f-f1fa-4d2d-82cd-d9ad5124f02a" name="按钮前往地址" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\6bd3ae45-42ec-40a5-924d-63bdd50f5463.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="WorkerW">
+        <optional index="14" />
+      </wnd>
+      <wnd x:name="Pane" cls="ReBarWindow32">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="Address Band Root">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ProgressBar" cls="msctls_progress32" uia-name="正在加载">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="ToolBar" cls="ToolbarWindow32" uia-name="地址区段">
+        <optional title="地址区段" index="1" />
+      </wnd>
+      <uia x:name="Button">
+        <optional index="0" />
+      </uia>
+    </selector>
+    <selector id="81c499c1-0aed-482f-821b-22ccedcf8b39" name="按钮_上传" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\0baefad0-d57d-4d3f-9330-5256350d2e4e.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Button" cls="Button" uia-name="上传">
+        <optional title="上传" index="5" />
+      </wnd>
+    </selector>
+    <selector id="a7f157ed-1a7d-4c54-9239-3301a915e3fe" name="编辑_地址_3" type="simple" framework="win32" processName="msedge" productName="" winTitle="豫园股份集团企业云盘 和另外 2 个页面 - 用户配置 1 - Microsoft​ Edge" screenshot=".dev\screenshot\230f0a2e-fd72-4c98-ac86-bb2cba056d50.jpg">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="豫园股份集团企业云盘 和另外 2 个页面 - 用户配置 1 - Microsoft​ Edge" app="msedge">
+        <optional />
+      </wnd>
+      <wnd x:name="Window" cls="#32770" title="选择要上传的文件夹">
+        <optional />
+      </wnd>
+      <wnd x:name="Pane" cls="WorkerW">
+        <optional index="14" />
+      </wnd>
+      <wnd x:name="Pane" cls="ReBarWindow32">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="Address Band Root">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ProgressBar" cls="msctls_progress32" uia-name="正在加载">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Pane" cls="ComboBoxEx32">
+        <optional index="2" />
+      </wnd>
+      <wnd x:name="ComboBox" cls="ComboBox" uia-name="地址">
+        <optional index="0" />
+      </wnd>
+      <wnd x:name="Edit" cls="Edit" uia-name="地址">
+        <optional index="0" />
+      </wnd>
+    </selector>
+  </group>
+</repository>
