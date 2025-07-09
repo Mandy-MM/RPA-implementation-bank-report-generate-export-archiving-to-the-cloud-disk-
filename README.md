@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project was developed during my first-year internship and involved building RPA (Robotic Process Automation) tools using TagUI. The tool was designed to automate various internal financial tasks for the company, including but not limited to report generation, data entry, and automated data processing.
+This project was developed during my first-year internship and involved building RPA (Robotic Process Automation) tools using Yingdao. The tool was designed to automate various internal financial tasks for the company, including but not limited to report generation, data entry, and automated data processing.
 
 The goal of this project was to increase efficiency, reduce manual errors and time waste, and also to help me gain valuable hands-on experience. I used Python in combination with TagUI’s Python interface for secondary development and successfully solved multiple real-world problems. The simplified version of this project is available on my GitHub for demonstration and archiving purposes.
 
@@ -41,7 +41,7 @@ Due to company confidentiality, the complete project cannot be made public. Howe
 ### Requirements
 
 - Python 3.x  
-- TagUI (by AI Singapore)
+- Yingdao RPA
 
 ### Installation Steps
 
