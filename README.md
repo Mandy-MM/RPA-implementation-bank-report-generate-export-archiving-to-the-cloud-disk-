@@ -1,46 +1,53 @@
-# RPA开发项目
+# RPA Automation Project (Financial Workflow)
 
-## 项目简介
+## Project Overview
 
-该项目是我在大一实习期间开发的一部分，使用影刀进行RPA（机器人流程自动化）开发。这个工具可以帮助自动化处理公司内部的各种财务任务，包括但不限于报表生成、数据录入以及数据的自动化处理等。
+This project was developed during my first-year internship and involved building RPA (Robotic Process Automation) tools using TagUI. The tool was designed to automate various internal financial tasks for the company, including but not limited to report generation, data entry, and automated data processing.
 
-本项目目的是为了实现自动化，提高工作效率，减少人工操作带来的错误和时间浪费，同时也为自己积累了宝贵的实践经验。在这个项目中，我使用Python与影刀的Python接口进行二次开发，解决了多个实际问题，并将其作为自己的一个小项目上传至GitHub进行保存和展示。
+The goal of this project was to increase efficiency, reduce manual errors and time waste, and also to help me gain valuable hands-on experience. I used Python in combination with TagUI’s Python interface for secondary development and successfully solved multiple real-world problems. The simplified version of this project is available on my GitHub for demonstration and archiving purposes.
 
-## 技术栈
+## Tech Stack
 
-- **语言**：Python
-- **工具**：影刀（TagUI）
-- **版本控制**：Git
-- **操作系统**：Windows / Linux
+- **Language**: Python  
+- **Tool**: TagUI  
+- **Version Control**: Git  
+- **Operating System**: Windows / Linux  
 
-## 项目背景
+## Background
 
-在我的实习过程中，我主要负责财务数据的自动化处理工作，其中包括：
-1. 报表生成自动化：使用影刀脚本生成指定的财务报表，节省了大量时间。
-2. 数据录入与汇总：通过自动化工具快速抓取数据并进行汇总，减少了人工处理的错误和时间消耗。
-3. 跨平台执行：通过Python脚本结合影刀实现了跨平台的自动化任务处理。
+During my internship, I was mainly responsible for automating financial data operations. My key tasks included:
 
-## 主要功能
+1. **Automated Report Generation**: Used TagUI scripts to automatically generate specific financial reports, saving considerable time.
+2. **Data Entry & Aggregation**: Built tools to scrape and aggregate data, minimizing manual input errors and improving processing speed.
+3. **Cross-Platform Execution**: Combined Python scripts with TagUI to support task automation across both Windows and Linux platforms.
 
-1. **自动化财务报表生成**：通过影刀编写的自动化流程，能够定期生成财务报表，避免了手动操作可能带来的错误。
-2. **数据采集与录入**：自动化处理财务数据的采集与录入到系统中，节省人工时间并减少错误。
-3. **任务调度与执行**：通过Python定时任务调度工具，实现自动化的定期执行，无需人工干预。
+## Key Features
 
-## 项目展示
+1. **Automated Financial Report Generation**  
+   Designed RPA flows using TagUI to periodically generate financial reports and eliminate human error caused by repetitive tasks.
 
-由于公司内部安全原因，项目具体功能无法公开，但我将一些核心代码进行了简化和公开，作为展示我的技能和实习成果。具体代码实现可以查看我的GitHub仓库。
+2. **Data Collection and Entry**  
+   Developed automated scripts to collect financial data and input it into the system, significantly saving time and reducing errors.
 
-## 安装与使用
+3. **Scheduled Execution with Python**  
+   Implemented scheduled automation using Python-based task schedulers to ensure regular, unattended task execution.
 
-### 环境要求
+## Project Showcase
 
-- Python 3.x
-- TagUI（影刀）
+Due to company confidentiality, the complete project cannot be made public. However, I've simplified and shared key components of the codebase to demonstrate my skills and internship outcomes. Please refer to the GitHub repository for the sample code and documentation.
 
-### 安装步骤
+## Installation & Usage
 
-1. 克隆项目仓库：
+### Requirements
+
+- Python 3.x  
+- TagUI (by AI Singapore)
+
+### Installation Steps
+
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/your_username/rpa-finance-project.git
    cd rpa-finance-project
+
