@@ -9,7 +9,7 @@ The goal of this project was to increase efficiency, reduce manual errors and ti
 ## Tech Stack
 
 - **Language**: Python  
-- **Tool**: TagUI  
+- **Tool**: Yingdao RPA  
 - **Version Control**: Git  
 - **Operating System**: Windows / Linux  
 
